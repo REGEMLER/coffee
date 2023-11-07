@@ -1,0 +1,22 @@
+$light: #E1D4C9;
+$dark: #665F55;
+$text-bg: #403F3D; 
+$accent: #B0907A; 
+$border: #C1B6AD;
+
+$font:  "Inter", sans-serif; 
+$h1 : 72px;
+$title: 60px; 
+$mobile: 42px; 
+$link: 32px; 
+$subtitle: 24px; 
+$text: 16px; 
+$small-text: 10px; 
+
+@mixin textStyle($Font, $Size, $LH, $Weight, $color){
+    font-family: $Font;
+    font-size:$Size;
+    line-height:$LH;
+    font-weight:$Weight;
+    color: $color;
+}

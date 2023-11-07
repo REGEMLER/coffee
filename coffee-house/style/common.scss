@@ -1,0 +1,72 @@
+@import "var";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: $light;
+	padding: 20px 40px 40px 40px;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1360px;
+	//max-width: 1360px;
+	//min-width: 380px;
+	//width: 100%;
+    overflow-x: hidden;
+}
+
+.inner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    @include textStyle($font, $title, 75px, 600, $text-bg);
+    letter-spacing: 2px;
+    span{
+        font-style: italic;
+		color: $accent;
+    }
+}
+
+.subtitle {
+    @include textStyle($font, $subtitle, 30px, 600, $text-bg);
+    letter-spacing: 2px;
+}
+
+.link {
+    @include textStyle($font, $text, 24px, 600, $text-bg);
+    letter-spacing: 2px;
+}
+
+.text {
+    @include textStyle($font, $text, 24px, 400, $text-bg);
+    letter-spacing: 2px;
+}
