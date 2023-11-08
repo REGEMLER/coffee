@@ -1,0 +1,60 @@
+@import "var";
+@import "common";
+
+.enjoy__container {
+    margin: 20px auto;
+    height: 644px;
+    padding: 100px 0 100px 100px;
+    border-radius: 40px;
+    background-image: url(../IMG/img-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.enjoy__content {
+    max-width: 50%;
+
+    .enjoy__title {
+        max-width: 530px;
+        @include textStyle($font, $h1, 75px, 600, $light);
+        span {
+            color: $accent;
+            font-style: italic;
+        }
+    }
+
+    .enjoy__text {
+        max-width: 530px;
+        margin: 42px 0;
+        color: $accent;
+    }
+
+    .enjoy__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: $light;
+        .enjoy__coffee {
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+            transition: all linear .5s;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .enjoy__btn:hover  .enjoy__coffee {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
+    
+}

@@ -94,4 +94,11 @@ a {
   line-height: 24px;
   font-weight: 400;
   color: #403F3D;
+}
+
+.btn {
+  width: 200px;
+  height: 64px;
+  border-radius: 100px;
+  cursor: pointer;
 }/*# sourceMappingURL=common.css.map */
