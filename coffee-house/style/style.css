@@ -458,12 +458,17 @@ a {
   gap: 8px;
   background-color: #E1D4C9;
 }
+.enjoy__content .enjoy__btn .enjoy__link {
+  display: block;
+  text-align: center;
+  transform: translateX(8px);
+  transition: all linear 0.5s;
+}
 .enjoy__content .enjoy__btn .enjoy__coffee {
   width: 20px;
   height: 20px;
   opacity: 0;
   visibility: hidden;
-  display: none;
   transition: all linear 0.5s;
 }
 .enjoy__content .enjoy__btn .enjoy__coffee img {
@@ -475,5 +480,7 @@ a {
 .enjoy__content .enjoy__btn:hover .enjoy__coffee {
   opacity: 1;
   visibility: visible;
-  display: block;
+}
+.enjoy__content .enjoy__btn:hover .enjoy__link {
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */

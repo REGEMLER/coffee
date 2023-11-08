@@ -36,12 +36,18 @@
         justify-content: center;
         gap: 8px;
         background-color: $light;
+
+        .enjoy__link {
+            display: block;;
+            text-align: center;
+            transform: translateX(8px);
+            transition: all linear .5s;
+        }
         .enjoy__coffee {
             width: 20px;
             height: 20px;
             opacity: 0;
             visibility: hidden;
-            display: none;
             transition: all linear .5s;
             img {
                 width: 100%;
@@ -51,10 +57,13 @@
         }
     }
 
-    .enjoy__btn:hover  .enjoy__coffee {
+    .enjoy__btn:hover .enjoy__coffee {
         opacity: 1;
         visibility: visible;
-        display: block;
+    }
+
+    .enjoy__btn:hover .enjoy__link {
+        transform: translateX(0);
     }
     
 }
