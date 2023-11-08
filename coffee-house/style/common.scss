@@ -49,7 +49,6 @@ a {
 
 .title {
     @include textStyle($font, $title, 75px, 600, $text-bg);
-    letter-spacing: 2px;
     span{
         font-style: italic;
 		color: $accent;
@@ -58,15 +57,12 @@ a {
 
 .subtitle {
     @include textStyle($font, $subtitle, 30px, 600, $text-bg);
-    letter-spacing: 2px;
 }
 
 .link {
     @include textStyle($font, $text, 24px, 600, $text-bg);
-    letter-spacing: 2px;
 }
 
 .text {
     @include textStyle($font, $text, 24px, 400, $text-bg);
-    letter-spacing: 2px;
 }
