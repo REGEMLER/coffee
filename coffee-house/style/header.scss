@@ -54,13 +54,22 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
+        padding-top: 8px;
         flex-wrap: wrap;
 
         .header__link {
             display: block;
         }
 
-        .header__link:hover ~ .item__link_hover {
+        .header__link_hover {
+            display: block;
+            width: 1px;
+            margin: 0 auto;
+            height: 2px;
+            transition: all linear 1s;
+        }
+
+        .header__link:hover ~ .header__link_hover {
             width: 100%;
             background-color: $text-bg;
         }

@@ -37,7 +37,7 @@
                 <div class="header__btn">
                     <a class="header__link link" href="Menu.html">Menu</a>
                     <div class="header__coffee"><img src="icon/coffee-cup.svg" alt="cup of coffee"></div>
-                    <span class="item__link_hover"></span>
+                    <span class="header__link_hover"></span>
                 </div>
                 <div class="burger">
                     <span class="burger__item burger__item1"></span>
@@ -49,7 +49,7 @@
         <main>
             <section class="container enjoy__container" id="enjoy">
                 <div class="enjoy__content">
-                    <h2 class="enjoy__title"><span>Enjoy</span> premium</h2>
+                    <h1 class="enjoy__title"><span>Enjoy</span> premium</h1>
                     <h2 class="enjoy__title">coffee at our</h2>
                     <h2 class="enjoy__title">charming cafe</h2>
                     <p class="text enjoy__text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
@@ -59,7 +59,54 @@
                     </div>
                 </div>
             </section>
-            <section class="container favorites__container" id="favorites"></section>
+            <section class="container favorites__container" id="favorites">
+                <h2 class="title favorites__title">Choose your <span>favorite</span> coffee</h2>
+                <div class="favorites__content">
+                    <div class="favorites__arrow">
+                        <svg class="arrow-svg" width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="favorites__carusel">
+                        <div class="favorites__slider">
+                            <div class="favorites__card favorites__card_left">
+                                <div class="favorites__img">
+                                    <img src="IMG/coffee-slider-1.png" alt="Cup of milk with coffee">
+                                </div>
+                                <h3 class="favorites__subtitle subtitle">S’mores Frappuccino</h3>
+                                <p class="favorites__text text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                                <h4 class="favorites__price subtitle">$5.50</h4>
+                            </div>
+                            <div class="favorites__card favorites__card_center">
+                                <div class="favorites__img">
+                                    <img src="IMG/coffee-slider-2.png" alt="Caramel with coffee">
+                                </div>
+                                <h3 class="favorites__subtitle subtitle">Caramel Macchiato</h3>
+                                <p class="favorites__text text">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                <h4 class="favorites__price subtitle">$5.00</h4>
+                            </div>
+                            <div class="favorites__card favorites__card_right">
+                                <div class="favorites__img">
+                                    <img src="IMG/coffee-slider-3.png" alt="Ice coffee">
+                                </div>
+                                <h3 class="favorites__subtitle subtitle">Ice coffee</h3>
+                                <p class="favorites__text text">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                                <h4 class="favorites__price subtitle">$4.50</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="favorites__arrow">
+                        <svg class="arrow-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                    </div>
+                </div>
+                <div class="favorites__pagination">
+                    <span class="pagination__item pagination__item_active"></span>
+                    <span class="pagination__item"></span>
+                    <span class="pagination__item"></span>
+                </div>
+            </section>
             <section class="container about__container" id="about"></section>
             <section class="container mobile__container" id="mobile"></section>
         </main>
