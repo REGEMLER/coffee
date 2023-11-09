@@ -127,7 +127,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 345px;
+  gap: 363px;
   overflow: hidden;
 }
 .header__container .header__logo {
@@ -146,19 +146,38 @@ a {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  padding-top: 4px;
 }
 .header__menu .header__item {
   display: block;
 }
+.header__menu .header__item:hover + .item__link_hover {
+  width: 100%;
+  background-color: #403F3D;
+}
+
+.item__link_hover {
+  display: block;
+  width: 1px;
+  margin: 4px auto;
+  height: 2px;
+  transition: all linear 1s;
+}
 
 .header__icons .header__btn {
+  max-width: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 .header__icons .header__btn .header__link {
   display: block;
+}
+.header__icons .header__btn .header__link:hover ~ .item__link_hover {
+  width: 100%;
+  background-color: #403F3D;
 }
 .header__icons .header__btn .header__coffee {
   width: 20px;

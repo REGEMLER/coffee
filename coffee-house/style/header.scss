@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 345px;
+    gap: 363px;
     overflow: hidden;
 
     .header__logo {
@@ -27,21 +27,44 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    padding-top: 4px;
 
     .header__item {
         display: block;
     }
+
+    .header__item:hover + .item__link_hover {
+        width: 100%;
+        background-color: $text-bg;
+    }
+}
+
+.item__link_hover {
+    display: block;
+    width: 1px;
+    margin: 4px auto;
+    height: 2px;
+    transition: all linear 1s;
 }
 
 .header__icons {
     .header__btn {
+        max-width: 72px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 8px;
+        flex-wrap: wrap;
+
         .header__link {
             display: block;
         }
+
+        .header__link:hover ~ .item__link_hover {
+            width: 100%;
+            background-color: $text-bg;
+        }
+
         .header__coffee {
             width: 20px;
             height: 20px;
@@ -51,6 +74,7 @@
                 object-fit: cover;
             }
         }
+
         .burger {
             display: none;
         }
