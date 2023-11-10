@@ -30,6 +30,10 @@
     align-items: center;
     cursor: pointer;
     transition: all linear .7s;
+
+    .arrow-svg {
+        fill: $text-bg;
+    }
 }
 
 .favorites__arrow:hover {

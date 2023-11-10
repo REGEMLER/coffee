@@ -665,6 +665,9 @@ a {
   cursor: pointer;
   transition: all linear 0.7s;
 }
+.favorites__arrow .arrow-svg {
+  fill: #403F3D;
+}
 
 .favorites__arrow:hover {
   background-color: #665F55;
@@ -906,4 +909,207 @@ a {
 }
 .about__grid .about__item:hover img {
   transform: scale(1.1);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-SemiBold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-SemiBoldItalic.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-SemiBold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-SemiBoldItalic.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #E1D4C9;
+  padding: 20px 40px 40px 40px;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1360px;
+  overflow-x: hidden;
+}
+
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 600;
+  color: #403F3D;
+}
+.title span {
+  font-style: italic;
+  color: #B0907A;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #403F3D;
+}
+
+.link {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #403F3D;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #403F3D;
+}
+
+.btn {
+  width: 200px;
+  height: 64px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.mobile__container {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.mobile__container .mobile__content {
+  max-width: 50%;
+}
+.mobile__container .mobile__content .mobile__title {
+  max-width: 100%;
+}
+.mobile__container .mobile__content .mobile__text {
+  max-width: 100%;
+  margin: 40px auto;
+}
+.mobile__container .mobile__content .mobile__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn {
+  border: 1px solid #665F55;
+  padding: 12px, 20px, 12px, 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  transition: all ease 0.7s;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__icon {
+  width: 26px;
+  height: 31px;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__icon .btn-svg {
+  fill: #403F3D;
+  transition: all ease 0.7s;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__services .services__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #403F3D;
+  transition: all ease 0.7s;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__services .services__title {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #403F3D;
+  transition: all ease 0.7s;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover {
+  background-color: #665F55;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__subtitle {
+  color: #E1D4C9;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__title {
+  color: #E1D4C9;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .btn-svg {
+  color: #E1D4C9;
+}
+.mobile__container .mobile__img {
+  max-width: 50%;
+  width: 630px;
+  height: 630px;
+  overflow: hidden;
+}
+.mobile__container .mobile__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

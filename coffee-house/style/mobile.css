@@ -121,107 +121,82 @@ a {
   cursor: pointer;
 }
 
-.favorites__container {
-  margin: 0 auto;
-}
-
-.favorites__title {
-  margin-top: 85px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.favorites__content {
-  width: 100%;
+.mobile__container {
+  margin: 100px auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 40px auto;
-  gap: 40px;
-}
-
-.favorites__arrow {
-  width: 60px;
-  height: 60px;
-  border: 1px solid #665F55;
-  border-radius: 100%;
-  display: flex;
   justify-content: center;
+  gap: 100px;
+}
+.mobile__container .mobile__content {
+  max-width: 50%;
+}
+.mobile__container .mobile__content .mobile__title {
+  max-width: 100%;
+}
+.mobile__container .mobile__content .mobile__text {
+  max-width: 100%;
+  margin: 40px auto;
+}
+.mobile__container .mobile__content .mobile__buttons {
+  display: flex;
   align-items: center;
-  cursor: pointer;
-  transition: all linear 0.7s;
+  gap: 20px;
 }
-.favorites__arrow .arrow-svg {
+.mobile__container .mobile__content .mobile__buttons .mobile__btn {
+  border: 1px solid #665F55;
+  padding: 12px, 20px, 12px, 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  transition: all ease 0.7s;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__icon {
+  width: 26px;
+  height: 31px;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__icon .btn-svg {
   fill: #403F3D;
+  transition: all ease 0.7s;
 }
-
-.favorites__arrow:hover {
+.mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__services .services__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #403F3D;
+  transition: all ease 0.7s;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__services .services__title {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #403F3D;
+  transition: all ease 0.7s;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover {
   background-color: #665F55;
 }
-
-.favorites__arrow:hover .arrow-svg {
-  fill: #E1D4C9;
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__subtitle {
+  color: #E1D4C9;
 }
-
-.favorites__carusel {
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__title {
+  color: #E1D4C9;
+}
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .btn-svg {
+  color: #E1D4C9;
+}
+.mobile__container .mobile__img {
+  max-width: 50%;
+  width: 630px;
+  height: 630px;
   overflow: hidden;
 }
-.favorites__carusel .favorites__slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1152px;
-  transform: translateX(864px);
-}
-.favorites__carusel .favorites__slider .favorites__card {
-  width: 1152px;
-  padding: 0 192px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.favorites__carusel .favorites__slider .favorites__card .favorites__img {
-  width: 480px;
-  height: 480px;
-}
-.favorites__carusel .favorites__slider .favorites__card .favorites__img img {
+.mobile__container .mobile__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.favorites__carusel .favorites__slider .favorites__card .favorites__subtitle {
-  width: 100%;
-  text-align: center;
-  margin: 15px auto;
-}
-.favorites__carusel .favorites__slider .favorites__card .favorites__text {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-}
-.favorites__carusel .favorites__slider .favorites__card .favorites__price {
-  width: 100%;
-  text-align: center;
-  margin: 15px auto 5px auto;
-}
-
-.favorites__pagination {
-  width: 145px;
-  margin: 10px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-.favorites__pagination .pagination__item {
-  display: block;
-  width: 40px;
-  height: 4px;
-  border-radius: 100px;
-  background-color: #C1B6AD;
-}
-.favorites__pagination .pagination__item_active {
-  background-color: #665F55;
-}/*# sourceMappingURL=favorites.css.map */
+}/*# sourceMappingURL=mobile.css.map */
