@@ -122,21 +122,20 @@ a {
 }
 
 .mobile__container {
-  margin: 100px auto;
+  margin: 65x 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
+  gap: 140px;
 }
 .mobile__container .mobile__content {
   max-width: 50%;
 }
 .mobile__container .mobile__content .mobile__title {
-  max-width: 100%;
+  max-width: 600px;
 }
 .mobile__container .mobile__content .mobile__text {
-  max-width: 100%;
-  margin: 40px auto;
+  max-width: 630px;
+  margin: 40px 0 35px 0;
 }
 .mobile__container .mobile__content .mobile__buttons {
   display: flex;

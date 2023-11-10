@@ -2,7 +2,7 @@
 @import "common";
 
 .about__container {
-    margin: 100px auto;
+    margin: 90px auto 65px auto;
 }
 
 .about__title {
@@ -11,7 +11,7 @@
 
 .about__grid {
     width: 100%;
-    margin: 40px auto;
+    margin: 35px auto;
     display: grid;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
@@ -24,12 +24,12 @@
 
     .about__item2 {
         grid-area: b;
-        height: 440px;
+        height: 430px;
     }
 
     .about__item3 {
         grid-area: c;
-        height: 440px;
+        height: 430px;
     }
 
     .about__item4 {
@@ -42,14 +42,15 @@
         border-radius: 20px;
         overflow: hidden;
         img {
-            width: 100%;
-            height: 100%;
+            width: 110%;
+            height: 110%;
             object-fit: cover;
             transition: all linear .7s;
         }
     }
 
     .about__item:hover img {
-        transform: scale(1.1);
+        border-radius: 20px;
+        transform: scale(0.9);
     }
 }
