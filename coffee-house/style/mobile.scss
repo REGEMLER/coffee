@@ -2,12 +2,12 @@
 @import "common";
 
 .mobile__container {
-    margin: 65x 0;
+    margin: 60px auto 100px auto;
     display: flex;
-    align-items: center;
     gap: 140px;
 
     .mobile__content {
+        align-self: center;
         max-width: 50%;
 
         .mobile__title {
@@ -16,7 +16,7 @@
 
         .mobile__text {
             max-width: 630px;
-            margin: 40px 0 35px 0;
+            margin: 40px 0;
         }
 
         .mobile__buttons {
@@ -26,11 +26,10 @@
 
             .mobile__btn {
                 border: 1px solid $dark;
-                padding: 12px, 20px, 12px, 20px;
+                padding: 12px 20px 10px 20px;
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                gap: 13px;
+                gap: 17px;
                 transition: all ease 0.7s;
 
                 .mobile__icon {
@@ -49,7 +48,7 @@
                         transition: all ease 0.7s;
                     }
                     .services__title {
-                        @include textStyle($font, $subtitle, 24px, 600, $text-bg);
+                        @include textStyle($font, $text, 24px, 600, $text-bg);
                         transition: all ease 0.7s;
                     }
                 }
@@ -75,7 +74,6 @@
     }
 
     .mobile__img {
-        max-width: 50%;
         width: 630px;
         height: 630px;
         overflow: hidden;

@@ -64,7 +64,7 @@ a {
   width: 100vw;
   margin: 0 auto;
   background-color: #E1D4C9;
-  padding: 20px 40px 40px 40px;
+  padding: 0 40px;
   overflow-x: hidden;
 }
 
@@ -122,12 +122,12 @@ a {
 }
 
 .mobile__container {
-  margin: 65x 0;
+  margin: 60px auto 100px auto;
   display: flex;
-  align-items: center;
   gap: 140px;
 }
 .mobile__container .mobile__content {
+  align-self: center;
   max-width: 50%;
 }
 .mobile__container .mobile__content .mobile__title {
@@ -135,7 +135,7 @@ a {
 }
 .mobile__container .mobile__content .mobile__text {
   max-width: 630px;
-  margin: 40px 0 35px 0;
+  margin: 40px 0;
 }
 .mobile__container .mobile__content .mobile__buttons {
   display: flex;
@@ -144,11 +144,10 @@ a {
 }
 .mobile__container .mobile__content .mobile__buttons .mobile__btn {
   border: 1px solid #665F55;
-  padding: 12px, 20px, 12px, 20px;
+  padding: 12px 20px 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 13px;
+  gap: 17px;
   transition: all ease 0.7s;
 }
 .mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__icon {
@@ -169,7 +168,7 @@ a {
 }
 .mobile__container .mobile__content .mobile__buttons .mobile__btn .mobile__services .services__title {
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   color: #403F3D;
@@ -188,7 +187,6 @@ a {
   fill: #E1D4C9;
 }
 .mobile__container .mobile__img {
-  max-width: 50%;
   width: 630px;
   height: 630px;
   overflow: hidden;

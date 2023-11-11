@@ -64,7 +64,7 @@ a {
   width: 100vw;
   margin: 0 auto;
   background-color: #E1D4C9;
-  padding: 20px 40px 40px 40px;
+  padding: 0 40px;
   overflow-x: hidden;
 }
 
@@ -126,13 +126,14 @@ a {
 }
 
 .favorites__title {
-  margin-top: 85px;
+  margin-top: 80px;
   margin-bottom: 40px;
   text-align: center;
 }
 
 .favorites__content {
   width: 100%;
+  padding: 0 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -149,6 +150,8 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
   transition: all linear 0.7s;
 }
 .favorites__arrow .arrow-svg path {
@@ -164,44 +167,40 @@ a {
 }
 
 .favorites__carusel {
-  overflow: hidden;
-}
-.favorites__carusel .favorites__slider {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1152px;
-  transform: translateX(864px);
+  max-width: 1142px;
+  transform: translateX(1142px);
 }
-.favorites__carusel .favorites__slider .favorites__card {
-  width: 1152px;
-  padding: 0 192px;
+.favorites__carusel .favorites__card {
+  min-width: 1142px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.favorites__carusel .favorites__slider .favorites__card .favorites__img {
+.favorites__carusel .favorites__card .favorites__img {
   width: 480px;
   height: 480px;
 }
-.favorites__carusel .favorites__slider .favorites__card .favorites__img img {
+.favorites__carusel .favorites__card .favorites__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.favorites__carusel .favorites__slider .favorites__card .favorites__subtitle {
+.favorites__carusel .favorites__card .favorites__subtitle {
   width: 100%;
   text-align: center;
-  margin: 15px auto;
+  margin: 20px auto 15px auto;
 }
-.favorites__carusel .favorites__slider .favorites__card .favorites__text {
-  width: 100%;
+.favorites__carusel .favorites__card .favorites__text {
+  max-width: 480px;
   text-align: center;
   margin: 0 auto;
 }
-.favorites__carusel .favorites__slider .favorites__card .favorites__price {
+.favorites__carusel .favorites__card .favorites__price {
   width: 100%;
   text-align: center;
   margin: 15px auto 5px auto;

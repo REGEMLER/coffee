@@ -64,7 +64,7 @@ a {
   width: 100vw;
   margin: 0 auto;
   background-color: #E1D4C9;
-  padding: 20px 40px 40px 40px;
+  padding: 0 40px;
   overflow-x: hidden;
 }
 
@@ -162,7 +162,7 @@ a {
 .enjoy__content .enjoy__btn .enjoy__link {
   display: block;
   text-align: center;
-  transform: translateX(8px);
+  transform: translateX(15px);
   transition: all linear 0.5s;
 }
 .enjoy__content .enjoy__btn .enjoy__coffee {

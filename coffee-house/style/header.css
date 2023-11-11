@@ -64,7 +64,7 @@ a {
   width: 100vw;
   margin: 0 auto;
   background-color: #E1D4C9;
-  padding: 20px 40px 40px 40px;
+  padding: 0 40px;
   overflow-x: hidden;
 }
 
@@ -131,6 +131,7 @@ a {
   overflow: hidden;
 }
 .header__container .header__logo {
+  display: block;
   width: 100px;
   height: 60px;
 }
@@ -190,6 +191,7 @@ a {
 .header__icons .header__btn .header__coffee {
   width: 20px;
   height: 20px;
+  transform: translateY(-2px);
 }
 .header__icons .header__btn .header__coffee img {
   width: 100%;
