@@ -184,8 +184,8 @@ a {
 .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__title {
   color: #E1D4C9;
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .btn-svg {
-  color: #E1D4C9;
+.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .mobile__icon .btn-svg {
+  fill: #E1D4C9;
 }
 .mobile__container .mobile__img {
   max-width: 50%;

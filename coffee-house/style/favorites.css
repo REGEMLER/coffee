@@ -151,16 +151,16 @@ a {
   cursor: pointer;
   transition: all linear 0.7s;
 }
-.favorites__arrow .arrow-svg {
-  fill: #403F3D;
+.favorites__arrow .arrow-svg path {
+  transition: all linear 0.7s;
 }
 
 .favorites__arrow:hover {
   background-color: #665F55;
 }
 
-.favorites__arrow:hover .arrow-svg {
-  fill: #E1D4C9;
+.favorites__arrow:hover .arrow-svg path {
+  stroke: #E1D4C9;
 }
 
 .favorites__carusel {

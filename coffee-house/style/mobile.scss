@@ -68,10 +68,9 @@
                 color: $light;
             }
 
-            .mobile__btn:hover .btn-svg {
-                color: $light;
+            .mobile__btn:hover .mobile__icon .btn-svg {
+                fill: $light;
             }
-
         }
     }
 

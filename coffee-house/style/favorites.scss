@@ -32,7 +32,9 @@
     transition: all linear .7s;
 
     .arrow-svg {
-        fill: $text-bg;
+        path {
+            transition: all linear .7s;
+        }
     }
 }
 
@@ -40,8 +42,8 @@
     background-color: $dark;
 }
 
-.favorites__arrow:hover .arrow-svg {
-    fill: $light;
+.favorites__arrow:hover .arrow-svg path {
+    stroke: $light;
 }
 
 .favorites__carusel {

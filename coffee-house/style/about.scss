@@ -40,10 +40,13 @@
     .about__item {
         width: 660px;
         border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
         img {
-            width: 110%;
-            height: 110%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             transition: all linear .7s;
         }
@@ -51,6 +54,6 @@
 
     .about__item:hover img {
         border-radius: 20px;
-        transform: scale(0.9);
+        transform: scale(1.1);
     }
 }
