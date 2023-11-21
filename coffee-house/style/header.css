@@ -64,7 +64,7 @@ a {
   width: 100vw;
   margin: 0 auto;
   background-color: #E1D4C9;
-  padding: 0 40px;
+  padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
 
@@ -147,10 +147,10 @@ a {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding-top: 4px;
 }
 .header__menu .header__item {
   display: block;
+  padding-top: 3px;
 }
 .header__menu .header__item:hover + .item__link_hover {
   width: 100%;
@@ -160,7 +160,7 @@ a {
 .item__link_hover {
   display: block;
   width: 1px;
-  margin: 4px auto;
+  margin: 2px auto;
   height: 2px;
   transition: all linear 1s;
 }
@@ -177,12 +177,22 @@ a {
 .header__icons .header__btn .header__link {
   display: block;
 }
+.header__icons .header__btn .header-menu__link {
+  cursor: auto;
+  pointer-events: none;
+}
 .header__icons .header__btn .header__link_hover {
   display: block;
   width: 1px;
   margin: 0 auto;
   height: 2px;
+  position: relative;
+  top: -5px;
   transition: all linear 1s;
+}
+.header__icons .header__btn .header__link_active {
+  width: 100%;
+  background-color: #403F3D;
 }
 .header__icons .header__btn .header__link:hover ~ .header__link_hover {
   width: 100%;

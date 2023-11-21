@@ -64,7 +64,7 @@ a {
   width: 100vw;
   margin: 0 auto;
   background-color: #E1D4C9;
-  padding: 0 40px;
+  padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
 
@@ -124,7 +124,7 @@ a {
 .mobile__container {
   margin: 60px auto 100px auto;
   display: flex;
-  gap: 140px;
+  gap: 100px;
 }
 .mobile__container .mobile__content {
   align-self: center;

@@ -28,10 +28,11 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding-top: 4px;
+
 
     .header__item {
         display: block;
+        padding-top: 3px;
     }
 
     .header__item:hover + .item__link_hover {
@@ -43,10 +44,11 @@
 .item__link_hover {
     display: block;
     width: 1px;
-    margin: 4px auto;
+    margin: 2px auto;
     height: 2px;
     transition: all linear 1s;
 }
+
 
 .header__icons {
     .header__btn {
@@ -62,12 +64,24 @@
             display: block;
         }
 
+        .header-menu__link {
+            cursor: auto;
+            pointer-events: none;
+        }
+
         .header__link_hover {
             display: block;
             width: 1px;
             margin: 0 auto;
             height: 2px;
+            position: relative;
+            top: -5px;
             transition: all linear 1s;
+        }
+
+        .header__link_active {
+            width: 100%;
+            background-color: $text-bg;
         }
 
         .header__link:hover ~ .header__link_hover {

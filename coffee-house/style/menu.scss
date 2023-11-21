@@ -84,6 +84,7 @@
 
 .main__radio:checked + .main__button {
     background-color: $dark;
+    cursor: auto;
     .main__label {
         color: $light;
     }
@@ -130,10 +131,6 @@
             }
         }
 
-        .card__img:hover img {
-            transform: scale(0.95);
-        }
-
         .card__subtitle {
             max-width: 270px;
             margin: 20px 20px 10px 20px;
@@ -150,6 +147,10 @@
             position: absolute;
             bottom: 20px;
         }
+    }
+
+    .main__card:hover .card__img img {
+        transform: scale(0.95);
     }
 
     .main__card1 {
