@@ -275,9 +275,11 @@ a {
   display: block;
   padding-top: 3px;
 }
-.header__menu .header__item:hover + .item__link_hover {
-  width: 100%;
-  background-color: #403F3D;
+@media (hover: hover) {
+  .header__menu .header__item:hover + .item__link_hover {
+    width: 100%;
+    background-color: #403F3D;
+  }
 }
 
 .item__link_hover {
@@ -317,9 +319,11 @@ a {
   width: 100%;
   background-color: #403F3D;
 }
-.header__icons .header__btn .header__link:hover ~ .header__link_hover {
-  width: 100%;
-  background-color: #403F3D;
+@media (hover: hover) {
+  .header__icons .header__btn .header__link:hover ~ .header__link_hover {
+    width: 100%;
+    background-color: #403F3D;
+  }
 }
 .header__icons .header__btn .header__coffee {
   width: 20px;
@@ -529,16 +533,17 @@ a {
   width: 124px;
 }
 
-.main__button:hover {
-  background-color: #665F55;
+@media (hover: hover) {
+  .main__button:hover {
+    background-color: #665F55;
+  }
+  .main__button:hover .main__label {
+    color: #E1D4C9;
+  }
+  .main__button:hover .main__icon {
+    background-color: #E1D4C9;
+  }
 }
-.main__button:hover .main__label {
-  color: #E1D4C9;
-}
-.main__button:hover .main__icon {
-  background-color: #E1D4C9;
-}
-
 .main__radio:checked + .main__button {
   background-color: #665F55;
   cursor: auto;
@@ -600,8 +605,10 @@ a {
   position: absolute;
   bottom: 20px;
 }
-.main__grid .main__card:hover .card__img img {
-  transform: scale(0.95);
+@media (hover: hover) {
+  .main__grid .main__card:hover .card__img img {
+    transform: scale(0.95);
+  }
 }
 .main__grid .main__card1 {
   grid-area: a;
@@ -788,11 +795,15 @@ a {
 .footer__content .footer__media .footer__media-item .social-svg path {
   transition: all ease-in-out 0.7s;
 }
-.footer__content .footer__media .footer__media-item:hover {
-  background-color: #E1D4C9;
+@media (hover: hover) {
+  .footer__content .footer__media .footer__media-item:hover {
+    background-color: #E1D4C9;
+  }
 }
-.footer__content .footer__media .footer__media-item:hover .social-svg path {
-  stroke: #403F3D;
+@media (hover: hover) {
+  .footer__content .footer__media .footer__media-item:hover .social-svg path {
+    stroke: #403F3D;
+  }
 }
 
 .footer__contacts .footer__subtitle {
@@ -834,15 +845,20 @@ a {
   left: 0;
   right: 0;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link:hover::after {
-  width: 100%;
-  background-color: #E1D4C9;
+@media (hover: hover) {
+  .footer__contacts .footer__contacts .footer__contact .footer__link:hover::after {
+    width: 100%;
+    background-color: #E1D4C9;
+  }
 }
 .footer__contacts .footer__contacts .footer__contact .footer__link1::before {
   content: url(../icon/mark.svg);
 }
 .footer__contacts .footer__contacts .footer__contact .footer__link2::before {
   content: url(../icon/Path.svg);
+}
+.footer__contacts .footer__contacts .footer__contact .footer__link3 {
+  pointer-events: none;
 }
 .footer__contacts .footer__contacts .footer__contact .footer__link3::before {
   content: url(../icon/clock.svg);

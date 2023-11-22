@@ -174,17 +174,25 @@ a {
   color: #403F3D;
   transition: all ease 0.7s;
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover {
-  background-color: #665F55;
+@media (hover: hover) {
+  .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover {
+    background-color: #665F55;
+  }
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__subtitle {
-  color: #E1D4C9;
+@media (hover: hover) {
+  .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__subtitle {
+    color: #E1D4C9;
+  }
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__title {
-  color: #E1D4C9;
+@media (hover: hover) {
+  .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__title {
+    color: #E1D4C9;
+  }
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .mobile__icon .btn-svg {
-  fill: #E1D4C9;
+@media (hover: hover) {
+  .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .mobile__icon .btn-svg {
+    fill: #E1D4C9;
+  }
 }
 .mobile__container .mobile__img {
   width: 630px;

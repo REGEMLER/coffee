@@ -275,9 +275,11 @@ a {
   display: block;
   padding-top: 3px;
 }
-.header__menu .header__item:hover + .item__link_hover {
-  width: 100%;
-  background-color: #403F3D;
+@media (hover: hover) {
+  .header__menu .header__item:hover + .item__link_hover {
+    width: 100%;
+    background-color: #403F3D;
+  }
 }
 
 .item__link_hover {
@@ -317,9 +319,11 @@ a {
   width: 100%;
   background-color: #403F3D;
 }
-.header__icons .header__btn .header__link:hover ~ .header__link_hover {
-  width: 100%;
-  background-color: #403F3D;
+@media (hover: hover) {
+  .header__icons .header__btn .header__link:hover ~ .header__link_hover {
+    width: 100%;
+    background-color: #403F3D;
+  }
 }
 .header__icons .header__btn .header__coffee {
   width: 20px;
@@ -494,34 +498,32 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
   background-color: #E1D4C9;
-}
-.enjoy__content .enjoy__btn .enjoy__link {
-  display: block;
   text-align: center;
-  transform: translateX(15px);
+  position: relative;
   transition: all linear 0.5s;
 }
-.enjoy__content .enjoy__btn .enjoy__coffee {
+.enjoy__content .enjoy__btn::after {
+  content: url(../icon/coffee-cup.svg);
   width: 20px;
   height: 20px;
   opacity: 0;
   visibility: hidden;
+  position: absolute;
+  right: 60px;
   transition: all linear 0.5s;
 }
-.enjoy__content .enjoy__btn .enjoy__coffee img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+@media (hover: hover) {
+  .enjoy__content .enjoy__btn:hover {
+    padding-right: 40px;
+  }
+  .enjoy__content .enjoy__btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
 }
-.enjoy__content .enjoy__btn:hover .enjoy__coffee {
-  opacity: 1;
-  visibility: visible;
-}
-.enjoy__content .enjoy__btn:hover .enjoy__link {
-  transform: translateX(0);
+.enjoy__content .enjoy__btn:active {
+  transform: scale(0.9);
 }
 
 @font-face {
@@ -684,14 +686,16 @@ a {
   transition: all linear 0.7s;
 }
 
-.favorites__arrow:hover {
-  background-color: #665F55;
+@media (hover: hover) {
+  .favorites__arrow:hover {
+    background-color: #665F55;
+  }
 }
-
-.favorites__arrow:hover .arrow-svg path {
-  stroke: #E1D4C9;
+@media (hover: hover) {
+  .favorites__arrow:hover .arrow-svg path {
+    stroke: #E1D4C9;
+  }
 }
-
 .favorites__carusel {
   display: flex;
   align-items: center;
@@ -921,9 +925,11 @@ a {
      object-fit: cover;
   transition: all linear 0.7s;
 }
-.about__grid .about__item:hover img {
-  border-radius: 20px;
-  transform: scale(0.95);
+@media (hover: hover) {
+  .about__grid .about__item:hover img {
+    border-radius: 20px;
+    transform: scale(0.95);
+  }
 }
 
 @font-face {
@@ -1102,17 +1108,25 @@ a {
   color: #403F3D;
   transition: all ease 0.7s;
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover {
-  background-color: #665F55;
+@media (hover: hover) {
+  .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover {
+    background-color: #665F55;
+  }
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__subtitle {
-  color: #E1D4C9;
+@media (hover: hover) {
+  .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__subtitle {
+    color: #E1D4C9;
+  }
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__title {
-  color: #E1D4C9;
+@media (hover: hover) {
+  .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .services__title {
+    color: #E1D4C9;
+  }
 }
-.mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .mobile__icon .btn-svg {
-  fill: #E1D4C9;
+@media (hover: hover) {
+  .mobile__container .mobile__content .mobile__buttons .mobile__btn:hover .mobile__icon .btn-svg {
+    fill: #E1D4C9;
+  }
 }
 .mobile__container .mobile__img {
   width: 630px;
@@ -1286,11 +1300,15 @@ a {
 .footer__content .footer__media .footer__media-item .social-svg path {
   transition: all ease-in-out 0.7s;
 }
-.footer__content .footer__media .footer__media-item:hover {
-  background-color: #E1D4C9;
+@media (hover: hover) {
+  .footer__content .footer__media .footer__media-item:hover {
+    background-color: #E1D4C9;
+  }
 }
-.footer__content .footer__media .footer__media-item:hover .social-svg path {
-  stroke: #403F3D;
+@media (hover: hover) {
+  .footer__content .footer__media .footer__media-item:hover .social-svg path {
+    stroke: #403F3D;
+  }
 }
 
 .footer__contacts .footer__subtitle {
@@ -1332,15 +1350,20 @@ a {
   left: 0;
   right: 0;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link:hover::after {
-  width: 100%;
-  background-color: #E1D4C9;
+@media (hover: hover) {
+  .footer__contacts .footer__contacts .footer__contact .footer__link:hover::after {
+    width: 100%;
+    background-color: #E1D4C9;
+  }
 }
 .footer__contacts .footer__contacts .footer__contact .footer__link1::before {
   content: url(../icon/mark.svg);
 }
 .footer__contacts .footer__contacts .footer__contact .footer__link2::before {
   content: url(../icon/Path.svg);
+}
+.footer__contacts .footer__contacts .footer__contact .footer__link3 {
+  pointer-events: none;
 }
 .footer__contacts .footer__contacts .footer__contact .footer__link3::before {
   content: url(../icon/clock.svg);

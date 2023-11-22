@@ -191,16 +191,17 @@ a {
   width: 124px;
 }
 
-.main__button:hover {
-  background-color: #665F55;
+@media (hover: hover) {
+  .main__button:hover {
+    background-color: #665F55;
+  }
+  .main__button:hover .main__label {
+    color: #E1D4C9;
+  }
+  .main__button:hover .main__icon {
+    background-color: #E1D4C9;
+  }
 }
-.main__button:hover .main__label {
-  color: #E1D4C9;
-}
-.main__button:hover .main__icon {
-  background-color: #E1D4C9;
-}
-
 .main__radio:checked + .main__button {
   background-color: #665F55;
   cursor: auto;
@@ -262,8 +263,10 @@ a {
   position: absolute;
   bottom: 20px;
 }
-.main__grid .main__card:hover .card__img img {
-  transform: scale(0.95);
+@media (hover: hover) {
+  .main__grid .main__card:hover .card__img img {
+    transform: scale(0.95);
+  }
 }
 .main__grid .main__card1 {
   grid-area: a;

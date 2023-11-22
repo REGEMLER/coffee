@@ -55,20 +55,28 @@
 
             }
 
-            .mobile__btn:hover {
-                background-color: $dark;
+            @media(hover: hover){
+                .mobile__btn:hover {
+                    background-color: $dark;
+                }
             }
 
-            .mobile__btn:hover .services__subtitle {
-                color: $light;
+            @media(hover: hover){
+                .mobile__btn:hover .services__subtitle {
+                    color: $light;
+                }
             }
 
-            .mobile__btn:hover .services__title {
-                color: $light;
+            @media(hover: hover){
+                .mobile__btn:hover .services__title {
+                    color: $light;
+                }
             }
 
-            .mobile__btn:hover .mobile__icon .btn-svg {
-                fill: $light;
+            @media(hover: hover){
+                .mobile__btn:hover .mobile__icon .btn-svg {
+                    fill: $light;
+                }
             }
         }
     }

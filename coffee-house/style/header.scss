@@ -35,9 +35,11 @@
         padding-top: 3px;
     }
 
-    .header__item:hover + .item__link_hover {
-        width: 100%;
-        background-color: $text-bg;
+    @media(hover: hover){
+        .header__item:hover + .item__link_hover {
+            width: 100%;
+            background-color: $text-bg;
+        }
     }
 }
 
@@ -84,9 +86,11 @@
             background-color: $text-bg;
         }
 
-        .header__link:hover ~ .header__link_hover {
-            width: 100%;
-            background-color: $text-bg;
+        @media(hover: hover){
+            .header__link:hover ~ .header__link_hover {
+                width: 100%;
+                background-color: $text-bg;
+            }
         }
 
         .header__coffee {

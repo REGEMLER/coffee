@@ -158,14 +158,16 @@ a {
   transition: all linear 0.7s;
 }
 
-.favorites__arrow:hover {
-  background-color: #665F55;
+@media (hover: hover) {
+  .favorites__arrow:hover {
+    background-color: #665F55;
+  }
 }
-
-.favorites__arrow:hover .arrow-svg path {
-  stroke: #E1D4C9;
+@media (hover: hover) {
+  .favorites__arrow:hover .arrow-svg path {
+    stroke: #E1D4C9;
+  }
 }
-
 .favorites__carusel {
   display: flex;
   align-items: center;

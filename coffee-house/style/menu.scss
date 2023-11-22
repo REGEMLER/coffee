@@ -72,13 +72,15 @@
     width: 124px;
 }
 
-.main__button:hover {
-    background-color: $dark;
-    .main__label {
-        color: $light;
-    }
-    .main__icon {
-        background-color: $light;
+@media(hover: hover){
+    .main__button:hover {
+        background-color: $dark;
+        .main__label {
+            color: $light;
+        }
+        .main__icon {
+            background-color: $light;
+        }
     }
 }
 
@@ -149,8 +151,10 @@
         }
     }
 
-    .main__card:hover .card__img img {
-        transform: scale(0.95);
+    @media(hover: hover){
+        .main__card:hover .card__img img {
+            transform: scale(0.95);
+        }
     }
 
     .main__card1 {

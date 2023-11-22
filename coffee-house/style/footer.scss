@@ -42,12 +42,16 @@
             }
         }
 
-        .footer__media-item:hover {
-            background-color: $light;
+        @media(hover: hover){
+            .footer__media-item:hover {
+                background-color: $light;
+            }
         }
 
-        .footer__media-item:hover .social-svg path {
-            stroke: $text-bg;
+        @media(hover: hover){
+            .footer__media-item:hover .social-svg path {
+                stroke: $text-bg;
+            }
         }
     }
 }
@@ -95,13 +99,14 @@
                 }
             }
 
-            .footer__link:hover {
-                &::after {
-                    width: 100%;
-                    background-color: $light;
+            @media(hover: hover){
+                .footer__link:hover {
+                    &::after {
+                        width: 100%;
+                        background-color: $light;
+                    }
                 }
             }
-
             .footer__link1 {
                 &::before {
                     content: url(../icon/mark.svg);
@@ -113,6 +118,7 @@
                 }
             }
             .footer__link3 {
+                pointer-events: none;
                 &::before {
                     content: url(../icon/clock.svg);
                 }
