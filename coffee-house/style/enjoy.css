@@ -69,13 +69,10 @@ a {
 }
 
 .container {
-  width: 1360px;
+  max-width: 1360px;
+  min-width: 380px;
+  width: 100%;
   overflow-x: hidden;
-}
-
-.inner {
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .title {
@@ -131,9 +128,19 @@ a {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+@media screen and (max-width: 1432px) {
+  .enjoy__container {
+    padding: 7% 0 7% 7%;
+  }
+}
 
 .enjoy__content {
   max-width: 50%;
+}
+@media screen and (max-width: 1432px) {
+  .enjoy__content {
+    max-width: 70%;
+  }
 }
 .enjoy__content .enjoy__title {
   max-width: 530px;

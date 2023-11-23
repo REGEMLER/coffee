@@ -9,11 +9,15 @@
     align-items: center;
     gap: 363px;
     overflow: hidden;
+    @media screen and (max-width: 1432px){
+        gap: 0;
+    }
 
     .header__logo {
         display: block;
         width: 100px;
         height: 60px;
+        aspect-ratio: 100/60;
 
         img {
             width: 100%;
@@ -28,6 +32,11 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    @media screen and (max-width: 1432px){
+        min-width: 440px;
+        flex-basis: 30%;
+        gap: 5%;
+    }
 
 
     .header__item {
@@ -96,6 +105,7 @@
         .header__coffee {
             width: 20px;
             height: 20px;
+            aspect-ratio: 1/1;
             transform: translateY(-2px);
             img {
                 width: 100%;

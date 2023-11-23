@@ -10,10 +10,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    @media screen and (max-width: 1432px){
+        padding: 7% 0 7% 7%;
+    }
 }
 
 .enjoy__content {
     max-width: 50%;
+    @media screen and (max-width: 1432px){
+        max-width: 70%;
+    }
 
     .enjoy__title {
         max-width: 530px;
