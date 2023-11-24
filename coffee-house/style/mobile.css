@@ -69,13 +69,10 @@ a {
 }
 
 .container {
-  width: 1360px;
+  max-width: 1360px;
+  min-width: 380px;
+  width: 100%;
   overflow-x: hidden;
-}
-
-.inner {
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .title {
@@ -126,16 +123,38 @@ a {
   display: flex;
   gap: 100px;
 }
+@media screen and (max-width: 1100px) {
+  .mobile__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .mobile__container .mobile__content {
   align-self: center;
   max-width: 50%;
 }
+@media screen and (max-width: 1100px) {
+  .mobile__container .mobile__content {
+    max-width: 100%;
+  }
+}
 .mobile__container .mobile__content .mobile__title {
   max-width: 600px;
+}
+@media screen and (max-width: 1100px) {
+  .mobile__container .mobile__content .mobile__title {
+    max-width: 100%;
+  }
 }
 .mobile__container .mobile__content .mobile__text {
   max-width: 630px;
   margin: 40px 0;
+}
+@media screen and (max-width: 1100px) {
+  .mobile__container .mobile__content .mobile__text {
+    max-width: 100%;
+  }
 }
 .mobile__container .mobile__content .mobile__buttons {
   display: flex;
@@ -197,7 +216,20 @@ a {
 .mobile__container .mobile__img {
   width: 630px;
   height: 630px;
+  aspect-ratio: 1/1;
   overflow: hidden;
+}
+@media screen and (max-width: 1432px) {
+  .mobile__container .mobile__img {
+    width: 46%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .mobile__container .mobile__img {
+    width: 630px;
+    height: 630px;
+  }
 }
 .mobile__container .mobile__img img {
   width: 100%;

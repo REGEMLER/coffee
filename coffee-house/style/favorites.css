@@ -123,7 +123,7 @@ a {
 }
 
 .favorites__title {
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -136,6 +136,11 @@ a {
   justify-content: space-between;
   margin: 40px auto;
   gap: 40px;
+}
+@media screen and (max-width: 1432px) {
+  .favorites__content {
+    padding: 0;
+  }
 }
 
 .favorites__arrow {
@@ -166,52 +171,73 @@ a {
   }
 }
 .favorites__carusel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1142px;
-  transform: translateX(1142px);
+  max-width: 1150px;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 1432px) {
   .favorites__carusel {
-    width: 85%;
-    transform: translateX(100%);
+    max-width: 84.5%;
+    width: 84, 5%;
   }
 }
-.favorites__carusel .favorites__card {
-  min-width: 1142px;
+@media screen and (max-width: 1250px) {
+  .favorites__carusel {
+    max-width: 80%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .favorites__carusel {
+    max-width: 480px;
+    width: 480px;
+  }
+}
+.favorites__carusel .favorites__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(1150px);
+}
+@media screen and (max-width: 1432px) {
+  .favorites__carusel .favorites__slider {
+    transform: translate(100%);
+  }
+}
+.favorites__carusel .favorites__slider .favorites__card {
+  min-width: 1150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 1432px) {
-  .favorites__carusel .favorites__card {
+  .favorites__carusel .favorites__slider .favorites__card {
     min-width: 100%;
+    width: 100%;
   }
 }
-.favorites__carusel .favorites__card .favorites__img {
+.favorites__carusel .favorites__slider .favorites__card .favorites__img {
   width: 480px;
   height: 480px;
   aspect-ratio: 1/1;
 }
-.favorites__carusel .favorites__card .favorites__img img {
+.favorites__carusel .favorites__slider .favorites__card .favorites__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.favorites__carusel .favorites__card .favorites__subtitle {
+.favorites__carusel .favorites__slider .favorites__card .favorites__subtitle {
   width: 100%;
   text-align: center;
   margin: 20px auto 15px auto;
 }
-.favorites__carusel .favorites__card .favorites__text {
+.favorites__carusel .favorites__slider .favorites__card .favorites__text {
   max-width: 480px;
   text-align: center;
   margin: 0 auto;
 }
-.favorites__carusel .favorites__card .favorites__price {
+.favorites__carusel .favorites__slider .favorites__card .favorites__price {
   width: 100%;
   text-align: center;
   margin: 16px auto 0 auto;

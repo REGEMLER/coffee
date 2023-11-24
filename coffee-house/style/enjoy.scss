@@ -2,7 +2,7 @@
 @import "common";
 
 .enjoy__container {
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     height: 644px;
     padding: 100px 0 100px 100px;
     border-radius: 40px;
@@ -13,12 +13,15 @@
     @media screen and (max-width: 1432px){
         padding: 7% 0 7% 7%;
     }
+    @media screen and (max-width: 800px){
+        padding: 100px 20px 100px 60px;
+    }
 }
 
 .enjoy__content {
     max-width: 50%;
     @media screen and (max-width: 1432px){
-        max-width: 70%;
+        max-width: 90%;
     }
 
     .enjoy__title {
@@ -33,7 +36,7 @@
     .enjoy__text {
         max-width: 530px;
         margin: 42px 0;
-        color: $accent;
+        color: $light;
     }
 
     .enjoy__btn {
