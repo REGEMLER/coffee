@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: 0 auto;
+}
+
 ul,
 ol,
 li {
@@ -67,10 +71,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -81,6 +90,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -161,6 +176,11 @@ a {
     width: 684px;
   }
 }
+@media screen and (max-width: 750px) {
+  .about__grid .about__item {
+    width: 100%;
+  }
+}
 .about__grid .about__item img {
   width: 726px;
   height: 726px;
@@ -177,6 +197,11 @@ a {
 @media screen and (max-width: 800px) {
   .about__grid .about__item img {
     width: 726px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about__grid .about__item img {
+    width: 110%;
   }
 }
 @media (hover: hover) {

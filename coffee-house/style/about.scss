@@ -37,6 +37,9 @@
         @media screen and (max-width: 800px){
             width: 684px;
         }
+        @media screen and (max-width: 750px){
+            width: 100%;
+        }
         img {
             width: 726px;
             height: 726px;
@@ -48,6 +51,9 @@
             }
             @media screen and (max-width: 800px){
                 width: 726px;
+            }
+            @media screen and (max-width: 750px){
+                width: 110%;
             }
         }
     }

@@ -15,6 +15,11 @@
     }
     @media screen and (max-width: 800px){
         padding: 100px 20px 100px 60px;
+        background-position: center center;
+    }
+    @media screen and (max-width: 730px){
+        padding: 60px 16px;
+        height: auto;
     }
 }
 
@@ -23,10 +28,17 @@
     @media screen and (max-width: 1432px){
         max-width: 90%;
     }
+    @media screen and (max-width: 400px){
+        max-width: 100%;
+    }
 
     .enjoy__title {
         max-width: 530px;
         @include textStyle($font, $h1, 75px, 600, $light);
+        @media screen and (max-width: 680px){
+            font-size: 42px;
+            line-height: 48.3px;
+        }
         span {
             color: $accent;
             font-style: italic;
@@ -37,6 +49,9 @@
         max-width: 530px;
         margin: 42px 0;
         color: $light;
+        @media screen and (max-width: 400px){
+            margin: 40px 0;
+        }
     }
 
     .enjoy__btn {
@@ -47,6 +62,9 @@
         text-align: center;
         position: relative;
         transition: all linear .5s;
+        @media screen and (max-width: 800px){
+            padding-right: 30px;
+        }
 
         &::after {
             content: url(../icon/coffee-cup.svg);
@@ -55,14 +73,18 @@
             opacity: 0;
             visibility: hidden;
             position: absolute;
-            right: 60px;
+            right: 65px;
             transition: all linear .5s;
+            @media screen and (max-width: 800px){
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
 
     @media(hover: hover) {
         .enjoy__btn:hover {
-            padding-right: 40px;
+            padding-right: 30px;
             &::after {
                 opacity: 1;
                 visibility: visible;

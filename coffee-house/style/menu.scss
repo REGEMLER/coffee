@@ -23,6 +23,9 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
+    @media screen and (max-width: 440px){
+        gap: 8px;
+    }
 
     .main__radio {
         display: none;
@@ -113,6 +116,12 @@
     @media screen and (max-width: 920px){
         grid-template-areas: "a b" 
         "c d";
+    }
+    @media screen and (max-width: 750px){
+        grid-template-areas: "a"
+        "b"
+        "c" 
+        "d";
     }
 
     .main__card {

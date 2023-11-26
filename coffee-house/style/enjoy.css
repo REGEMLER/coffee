@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: 0 auto;
+}
+
 ul,
 ol,
 li {
@@ -67,10 +71,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -81,6 +90,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -136,6 +151,13 @@ a {
 @media screen and (max-width: 800px) {
   .enjoy__container {
     padding: 100px 20px 100px 60px;
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 730px) {
+  .enjoy__container {
+    padding: 60px 16px;
+    height: auto;
   }
 }
 
@@ -147,6 +169,11 @@ a {
     max-width: 90%;
   }
 }
+@media screen and (max-width: 400px) {
+  .enjoy__content {
+    max-width: 100%;
+  }
+}
 .enjoy__content .enjoy__title {
   max-width: 530px;
   font-family: "Inter", sans-serif;
@@ -154,6 +181,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #E1D4C9;
+}
+@media screen and (max-width: 680px) {
+  .enjoy__content .enjoy__title {
+    font-size: 42px;
+    line-height: 48.3px;
+  }
 }
 .enjoy__content .enjoy__title span {
   color: #B0907A;
@@ -164,6 +197,11 @@ a {
   margin: 42px 0;
   color: #E1D4C9;
 }
+@media screen and (max-width: 400px) {
+  .enjoy__content .enjoy__text {
+    margin: 40px 0;
+  }
+}
 .enjoy__content .enjoy__btn {
   display: flex;
   align-items: center;
@@ -173,6 +211,11 @@ a {
   position: relative;
   transition: all linear 0.5s;
 }
+@media screen and (max-width: 800px) {
+  .enjoy__content .enjoy__btn {
+    padding-right: 30px;
+  }
+}
 .enjoy__content .enjoy__btn::after {
   content: url(../icon/coffee-cup.svg);
   width: 20px;
@@ -180,12 +223,18 @@ a {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  right: 60px;
+  right: 65px;
   transition: all linear 0.5s;
+}
+@media screen and (max-width: 800px) {
+  .enjoy__content .enjoy__btn::after {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media (hover: hover) {
   .enjoy__content .enjoy__btn:hover {
-    padding-right: 40px;
+    padding-right: 30px;
   }
   .enjoy__content .enjoy__btn:hover::after {
     opacity: 1;

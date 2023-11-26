@@ -22,6 +22,9 @@
     @media screen and (max-width: 1432px){
         padding: 0;
     }
+    @media screen and (max-width: 640px){
+        gap: 0;
+    }
 }
 
 .favorites__arrow {
@@ -36,6 +39,9 @@
     position: relative;
     z-index: 2;
     transition: all linear .7s;
+    @media screen and (max-width: 640px){
+        display: none;
+    }
 
     .arrow-svg {
         path {
@@ -71,6 +77,10 @@
         max-width: 480px;
         width: 480px;
     }
+    @media screen and (max-width: 640px){
+        max-width: 100%;
+        width: 100%;
+    }
 
     .favorites__slider{
         display: flex;
@@ -95,6 +105,10 @@
                 width: 480px;
                 height: 480px;
                 aspect-ratio: 1/1;
+                @media screen and (max-width: 640px){
+                    width: 348px;
+                    height: 348px;
+                }
     
                 img {
                     width: 100%;

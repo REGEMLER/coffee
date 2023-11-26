@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: 0 auto;
+}
+
 ul,
 ol,
 li {
@@ -67,10 +71,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -81,6 +90,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -142,6 +157,11 @@ a {
     padding: 0;
   }
 }
+@media screen and (max-width: 640px) {
+  .favorites__content {
+    gap: 0;
+  }
+}
 
 .favorites__arrow {
   width: 60px;
@@ -155,6 +175,11 @@ a {
   position: relative;
   z-index: 2;
   transition: all linear 0.7s;
+}
+@media screen and (max-width: 640px) {
+  .favorites__arrow {
+    display: none;
+  }
 }
 .favorites__arrow .arrow-svg path {
   transition: all linear 0.7s;
@@ -192,6 +217,12 @@ a {
     width: 480px;
   }
 }
+@media screen and (max-width: 640px) {
+  .favorites__carusel {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .favorites__carusel .favorites__slider {
   display: flex;
   align-items: center;
@@ -220,6 +251,12 @@ a {
   width: 480px;
   height: 480px;
   aspect-ratio: 1/1;
+}
+@media screen and (max-width: 640px) {
+  .favorites__carusel .favorites__slider .favorites__card .favorites__img {
+    width: 348px;
+    height: 348px;
+  }
 }
 .favorites__carusel .favorites__slider .favorites__card .favorites__img img {
   width: 100%;

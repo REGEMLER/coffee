@@ -71,10 +71,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -85,6 +90,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -145,6 +156,11 @@ a {
   align-items: center;
   justify-content: center;
   gap: 16px;
+}
+@media screen and (max-width: 440px) {
+  .main__buttons {
+    gap: 8px;
+  }
 }
 .main__buttons .main__radio {
   display: none;
@@ -234,6 +250,11 @@ a {
 @media screen and (max-width: 920px) {
   .main__grid {
     grid-template-areas: "a b" "c d";
+  }
+}
+@media screen and (max-width: 750px) {
+  .main__grid {
+    grid-template-areas: "a" "b" "c" "d";
   }
 }
 .main__grid .main__card {

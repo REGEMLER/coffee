@@ -71,10 +71,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -85,6 +90,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -195,10 +206,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -209,6 +225,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -460,10 +482,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -474,6 +501,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -529,6 +562,13 @@ a {
 @media screen and (max-width: 800px) {
   .enjoy__container {
     padding: 100px 20px 100px 60px;
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 730px) {
+  .enjoy__container {
+    padding: 60px 16px;
+    height: auto;
   }
 }
 
@@ -540,6 +580,11 @@ a {
     max-width: 90%;
   }
 }
+@media screen and (max-width: 400px) {
+  .enjoy__content {
+    max-width: 100%;
+  }
+}
 .enjoy__content .enjoy__title {
   max-width: 530px;
   font-family: "Inter", sans-serif;
@@ -547,6 +592,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #E1D4C9;
+}
+@media screen and (max-width: 680px) {
+  .enjoy__content .enjoy__title {
+    font-size: 42px;
+    line-height: 48.3px;
+  }
 }
 .enjoy__content .enjoy__title span {
   color: #B0907A;
@@ -557,6 +608,11 @@ a {
   margin: 42px 0;
   color: #E1D4C9;
 }
+@media screen and (max-width: 400px) {
+  .enjoy__content .enjoy__text {
+    margin: 40px 0;
+  }
+}
 .enjoy__content .enjoy__btn {
   display: flex;
   align-items: center;
@@ -566,6 +622,11 @@ a {
   position: relative;
   transition: all linear 0.5s;
 }
+@media screen and (max-width: 800px) {
+  .enjoy__content .enjoy__btn {
+    padding-right: 30px;
+  }
+}
 .enjoy__content .enjoy__btn::after {
   content: url(../icon/coffee-cup.svg);
   width: 20px;
@@ -573,12 +634,18 @@ a {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  right: 60px;
+  right: 65px;
   transition: all linear 0.5s;
+}
+@media screen and (max-width: 800px) {
+  .enjoy__content .enjoy__btn::after {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media (hover: hover) {
   .enjoy__content .enjoy__btn:hover {
-    padding-right: 40px;
+    padding-right: 30px;
   }
   .enjoy__content .enjoy__btn:hover::after {
     opacity: 1;
@@ -662,10 +729,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -676,6 +748,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -737,6 +815,11 @@ a {
     padding: 0;
   }
 }
+@media screen and (max-width: 640px) {
+  .favorites__content {
+    gap: 0;
+  }
+}
 
 .favorites__arrow {
   width: 60px;
@@ -750,6 +833,11 @@ a {
   position: relative;
   z-index: 2;
   transition: all linear 0.7s;
+}
+@media screen and (max-width: 640px) {
+  .favorites__arrow {
+    display: none;
+  }
 }
 .favorites__arrow .arrow-svg path {
   transition: all linear 0.7s;
@@ -787,6 +875,12 @@ a {
     width: 480px;
   }
 }
+@media screen and (max-width: 640px) {
+  .favorites__carusel {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .favorites__carusel .favorites__slider {
   display: flex;
   align-items: center;
@@ -815,6 +909,12 @@ a {
   width: 480px;
   height: 480px;
   aspect-ratio: 1/1;
+}
+@media screen and (max-width: 640px) {
+  .favorites__carusel .favorites__slider .favorites__card .favorites__img {
+    width: 348px;
+    height: 348px;
+  }
 }
 .favorites__carusel .favorites__slider .favorites__card .favorites__img img {
   width: 100%;
@@ -930,10 +1030,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -944,6 +1049,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -1024,6 +1135,11 @@ a {
     width: 684px;
   }
 }
+@media screen and (max-width: 750px) {
+  .about__grid .about__item {
+    width: 100%;
+  }
+}
 .about__grid .about__item img {
   width: 726px;
   height: 726px;
@@ -1040,6 +1156,11 @@ a {
 @media screen and (max-width: 800px) {
   .about__grid .about__item img {
     width: 726px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about__grid .about__item img {
+    width: 110%;
   }
 }
 @media (hover: hover) {
@@ -1152,10 +1273,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -1166,6 +1292,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -1215,6 +1347,11 @@ a {
     align-items: center;
   }
 }
+@media screen and (max-width: 440px) {
+  .mobile__container {
+    gap: 40px;
+  }
+}
 .mobile__container .mobile__content {
   align-self: center;
   max-width: 50%;
@@ -1245,6 +1382,12 @@ a {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media screen and (max-width: 440px) {
+  .mobile__container .mobile__content .mobile__buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .mobile__container .mobile__content .mobile__buttons .mobile__btn {
   border: 1px solid #665F55;
@@ -1314,6 +1457,12 @@ a {
   .mobile__container .mobile__img {
     width: 630px;
     height: 630px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mobile__container .mobile__img {
+    width: 348px;
+    height: 348px;
   }
 }
 .mobile__container .mobile__img img {
@@ -1396,10 +1545,15 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
+}
 
 .container {
   max-width: 1360px;
-  min-width: 380px;
+  min-width: 348px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -1410,6 +1564,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -1467,15 +1627,28 @@ a {
     padding: 100px 60px;
   }
 }
+@media screen and (max-width: 460px) {
+  .footer__container {
+    gap: 0;
+    height: auto;
+    padding: 60px 16px;
+  }
+}
 
 .footer__content .footer__title {
   color: #E1D4C9;
+  max-width: 530px;
 }
 .footer__content .footer__media {
   margin: 40px 0;
   display: flex;
   align-items: center;
   gap: 12px;
+}
+@media screen and (max-width: 460px) {
+  .footer__content .footer__media {
+    margin-bottom: 0;
+  }
 }
 .footer__content .footer__media .footer__media-item {
   width: 60px;
@@ -1508,6 +1681,11 @@ a {
 .footer__contacts .footer__subtitle {
   margin: 35px 0 38px 0;
   color: #E1D4C9;
+}
+@media screen and (max-width: 460px) {
+  .footer__contacts .footer__subtitle {
+    margin: 40px 0;
+  }
 }
 .footer__contacts .footer__contacts {
   display: flex;

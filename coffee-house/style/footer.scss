@@ -18,11 +18,17 @@
         height: 738px;
         padding: 100px 60px;
     }
+    @media screen and (max-width: 460px){
+        gap: 0;
+        height: auto;
+        padding: 60px 16px;
+    }
 }
 
 .footer__content {
     .footer__title {
         color: $light;
+        max-width: 530px;
     }
 
     .footer__media {
@@ -30,6 +36,9 @@
         display: flex;
         align-items: center;
         gap: 12px;
+        @media screen and (max-width: 460px){
+            margin-bottom: 0;
+        }
 
         .footer__media-item {
             width: 60px;
@@ -68,6 +77,9 @@
     .footer__subtitle {
         margin: 35px 0 38px 0;
         color: $light;
+        @media screen and (max-width: 460px){
+            margin: 40px 0;
+        }
     }
 
     .footer__contacts {
