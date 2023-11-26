@@ -117,6 +117,12 @@ a {
   font-weight: 600;
   color: #403F3D;
 }
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 
 .text {
   font-family: "Inter", sans-serif;
@@ -252,6 +258,12 @@ a {
   font-weight: 600;
   color: #403F3D;
 }
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 
 .text {
   font-family: "Inter", sans-serif;
@@ -295,6 +307,19 @@ a {
      object-fit: cover;
 }
 
+.header__container_active {
+  height: 100vh;
+  max-height: 1000px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+  .header__nav_active {
+    order: 3;
+    flex-basis: 100%;
+  }
+}
+
 .header__menu {
   display: flex;
   justify-content: center;
@@ -311,6 +336,9 @@ a {
 @media screen and (max-width: 800px) {
   .header__menu {
     display: none;
+    flex-direction: column;
+    gap: 60px;
+    flex-basis: 100%;
   }
 }
 .header__menu .header__item {
@@ -409,6 +437,10 @@ a {
   }
 }
 
+.header__icons_active {
+  order: 2;
+}
+
 @font-face {
   font-family: "Inter";
   src: url(../fonts/Inter-Regular.otf);
@@ -528,6 +560,12 @@ a {
   font-weight: 600;
   color: #403F3D;
 }
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 
 .text {
   font-family: "Inter", sans-serif;
@@ -620,6 +658,11 @@ a {
   background-color: #E1D4C9;
   text-align: center;
   position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #403F3D;
   transition: all linear 0.5s;
 }
 @media screen and (max-width: 800px) {
@@ -774,6 +817,12 @@ a {
   line-height: 24px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .text {
@@ -1076,6 +1125,12 @@ a {
   font-weight: 600;
   color: #403F3D;
 }
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 
 .text {
   font-family: "Inter", sans-serif;
@@ -1318,6 +1373,12 @@ a {
   line-height: 24px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .text {
@@ -1590,6 +1651,12 @@ a {
   line-height: 24px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .text {

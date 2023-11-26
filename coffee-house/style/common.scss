@@ -51,7 +51,7 @@ a {
 .title {
     @include textStyle($font, $title, 75px, 600, $text-bg);
     @media screen and (max-width: 680px){
-        font-size: 32px;
+        font-size: $link;
         line-height: 40px;
     }
     span{
@@ -66,6 +66,10 @@ a {
 
 .link {
     @include textStyle($font, $text, 24px, 600, $text-bg);
+    @media screen and (max-width: 800px){
+        font-size: $link;
+        line-height: 40px;
+    }
 }
 
 .text {

@@ -61,6 +61,7 @@
         background-color: $light;
         text-align: center;
         position: relative;
+        @include textStyle($font, $text, 24px, 600, $text-bg);
         transition: all linear .5s;
         @media screen and (max-width: 800px){
             padding-right: 30px;

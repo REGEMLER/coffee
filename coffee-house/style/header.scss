@@ -27,6 +27,19 @@
     }
 }
 
+.header__container_active {
+    height: 100vh;
+    max-height: 1000px;
+    flex-wrap: wrap;
+}
+
+.header__nav_active {
+    @media screen and (max-width: 800px){
+        order: 3;
+        flex-basis: 100%;
+    }
+}
+
 .header__menu {
     display: flex;
     justify-content: center;
@@ -39,6 +52,9 @@
     }
     @media screen and (max-width: 800px){
         display: none;
+        flex-direction: column;
+        gap: 60px;
+        flex-basis: 100%;
     }
 
 
@@ -142,4 +158,8 @@
             }
         }
     }
+}
+
+.header__icons_active {
+    order: 2;
 }
