@@ -2,10 +2,9 @@
 @import "common";
 
 .main__container {
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     padding-bottom: 100px;
     @media screen and (max-width: 920px){
-        margin-top: 20px;
         padding-bottom: 60px;
     }
 
