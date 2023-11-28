@@ -586,7 +586,7 @@ a {
   margin: 20px auto 0 auto;
   padding-bottom: 100px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__container {
     padding-bottom: 60px;
   }
@@ -695,7 +695,7 @@ a {
   align-items: center;
   grid-template-areas: "a b c d" "e f g h";
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid {
     grid-template-areas: "a b" "c d";
   }
@@ -725,7 +725,7 @@ a {
     height: 600px;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card {
     width: 310px;
     height: 506px;
@@ -792,7 +792,7 @@ a {
 .main__grid .main__card5 {
   grid-area: e;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card5 {
     display: none;
   }
@@ -800,7 +800,7 @@ a {
 .main__grid .main__card6 {
   grid-area: f;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card6 {
     display: none;
   }
@@ -808,7 +808,7 @@ a {
 .main__grid .main__card7 {
   grid-area: g;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card7 {
     display: none;
   }
@@ -816,7 +816,7 @@ a {
 .main__grid .main__card8 {
   grid-area: h;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card8 {
     display: none;
   }
@@ -825,7 +825,7 @@ a {
 .main__refresh {
   display: none;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__refresh {
     display: flex;
     align-items: center;
@@ -1001,9 +1001,8 @@ a {
   .footer__container {
     flex-direction: column;
     justify-content: center;
-    gap: 28px;
+    gap: 25px;
     max-height: 740px;
-    height: 738px;
     padding: 100px 60px;
   }
 }
@@ -1062,27 +1061,32 @@ a {
   margin: 35px 0 38px 0;
   color: #E1D4C9;
 }
+@media screen and (max-width: 860px) {
+  .footer__contacts .footer__subtitle {
+    margin-bottom: 40px;
+  }
+}
 @media screen and (max-width: 460px) {
   .footer__contacts .footer__subtitle {
     margin: 40px 0;
   }
 }
-.footer__contacts .footer__contacts {
+.footer__contacts .footer__menu {
   display: flex;
   flex-direction: column;
   gap: 20px;
   transform: translateX(32px);
 }
-.footer__contacts .footer__contacts .footer__contact {
+.footer__contacts .footer__menu .footer__contact {
   max-width: 230px;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link {
+.footer__contacts .footer__menu .footer__contact .footer__link {
   display: inline-block;
   color: #E1D4C9;
   cursor: pointer;
   position: relative;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link::before {
+.footer__contacts .footer__menu .footer__contact .footer__link::before {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -1090,7 +1094,7 @@ a {
   transform: translateY(-50%);
   left: -32px;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link::after {
+.footer__contacts .footer__menu .footer__contact .footer__link::after {
   content: "";
   display: block;
   width: 1px;
@@ -1099,24 +1103,24 @@ a {
   transition: all linear 1s;
   position: absolute;
   bottom: -2px;
-  left: 0;
   right: 0;
+  left: -20%;
 }
 @media (hover: hover) {
-  .footer__contacts .footer__contacts .footer__contact .footer__link:hover::after {
-    width: 100%;
+  .footer__contacts .footer__menu .footer__contact .footer__link:hover::after {
+    width: 120%;
     background-color: #E1D4C9;
   }
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link1::before {
+.footer__contacts .footer__menu .footer__contact .footer__link1::before {
   content: url(../icon/mark.svg);
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link2::before {
+.footer__contacts .footer__menu .footer__contact .footer__link2::before {
   content: url(../icon/Path.svg);
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link3 {
+.footer__contacts .footer__menu .footer__contact .footer__link3 {
   pointer-events: none;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link3::before {
+.footer__contacts .footer__menu .footer__contact .footer__link3::before {
   content: url(../icon/clock.svg);
 }/*# sourceMappingURL=style2.css.map */

@@ -9,13 +9,13 @@
     background-image: url(../IMG/img-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     overflow: hidden;
     @media screen and (max-width: 1432px){
         padding: 7% 0 7% 7%;
     }
     @media screen and (max-width: 800px){
         padding: 100px 20px 100px 60px;
-        background-position: center center;
     }
     @media screen and (max-width: 730px){
         padding: 60px 16px;

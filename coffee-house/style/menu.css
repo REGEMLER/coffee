@@ -143,7 +143,7 @@ a {
   margin: 20px auto 0 auto;
   padding-bottom: 100px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__container {
     padding-bottom: 60px;
   }
@@ -252,7 +252,7 @@ a {
   align-items: center;
   grid-template-areas: "a b c d" "e f g h";
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid {
     grid-template-areas: "a b" "c d";
   }
@@ -282,7 +282,7 @@ a {
     height: 600px;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card {
     width: 310px;
     height: 506px;
@@ -349,7 +349,7 @@ a {
 .main__grid .main__card5 {
   grid-area: e;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card5 {
     display: none;
   }
@@ -357,7 +357,7 @@ a {
 .main__grid .main__card6 {
   grid-area: f;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card6 {
     display: none;
   }
@@ -365,7 +365,7 @@ a {
 .main__grid .main__card7 {
   grid-area: g;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card7 {
     display: none;
   }
@@ -373,7 +373,7 @@ a {
 .main__grid .main__card8 {
   grid-area: h;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__grid .main__card8 {
     display: none;
   }
@@ -382,7 +382,7 @@ a {
 .main__refresh {
   display: none;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
   .main__refresh {
     display: flex;
     align-items: center;
