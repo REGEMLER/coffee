@@ -9,27 +9,31 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="container header__container">
-            <a href="index.html" class="header__logo">
+        <header class="container header__container" id="header">
+            <a href="index.html" class="header__logo" id="headerLogo">
                 <img src="icon/logo.svg" alt="Resourse coffee house">
             </a>
-            <nav class="header__nav">
+            <nav class="header__nav" id="headerNav">
                 <ul class="header__menu">
                     <li>
                         <a class="header__item link" href="index.html#favorites">Favorite coffee</a>
-                        <span class="item__link_hover"></span>
+                        <span class="header__line"></span>
                     </li>
                     <li>
                         <a class="header__item link" href="index.html#about">About</a>
-                        <span class="item__link_hover"></span>
+                        <span class="header__line"></span>
                     </li>
                     <li>
                         <a class="header__item link" href="index.html#mobile">Mobile app</a>
-                        <span class="item__link_hover"></span>
+                        <span class="header__line"></span>
                     </li>
                     <li>
                         <a class="header__item link" href="#footer">Contact us</a>
-                        <span class="item__link_hover"></span>
+                        <span class="header__line"></span>
+                    </li>
+                    <li class="header__item_special">
+                        <a class="header__item link" href="Menu.html">Menu</a>
+                        <div class="header__coffee"><img src="icon/coffee-cup40.svg" alt="cup of coffee"></div>
                     </li>
                 </ul>
             </nav>
@@ -39,7 +43,7 @@
                     <div class="header__coffee"><img src="icon/coffee-cup.svg" alt="cup of coffee"></div>
                     <span class="header__link_hover header__link_active"></span>
                 </div>
-                <div class="burger">
+                <div class="burger" id="burger">
                     <span class="burger__item burger__item1"></span>
                     <span class="burger__item burger__item2"></span>
                 </div>
@@ -173,6 +177,7 @@
             </div>
         </footer>
     </div>
+    <script type="module" src="JS/menu.js"></script>
     <script type="module" src="JS/index.js"></script>
 </body>
 </html>
