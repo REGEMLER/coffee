@@ -645,13 +645,11 @@ a {
   max-width: 530px;
   margin: 42px 0;
   color: #E1D4C9;
-
 }
 @media screen and (max-width: 400px) {
   .enjoy__content .enjoy__text {
     margin: 40px 0;
   }
-
 }
 .enjoy__content .enjoy__btn {
   display: flex;
