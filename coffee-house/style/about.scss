@@ -16,25 +16,12 @@
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     grid-template-areas: "a c" "a c" "a c" "a d" "b d" "b d" "b d";
-
-    .about__item1 {
-        grid-area: a;
-        height: 590px;
-    }
-
-    .about__item2 {
-        grid-area: b;
-        height: 430px;
-    }
-
-    .about__item3 {
-        grid-area: c;
-        height: 430px;
-    }
-
-    .about__item4 {
-        grid-area: d;
-        height: 590px;
+    @media screen and (max-width: 800px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
     }
 
     .about__item {
@@ -44,11 +31,30 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        @media screen and (max-width: 1432px){
+            width: 100%;
+        }
+        @media screen and (max-width: 800px){
+            width: 684px;
+        }
+        @media screen and (max-width: 750px){
+            width: 100%;
+        }
         img {
             width: 726px;
             height: 726px;
             object-fit: cover;
             transition: all linear .7s;
+            aspect-ratio: 1/1;
+            @media screen and (max-width: 1432px){
+                width: 110%;
+            }
+            @media screen and (max-width: 800px){
+                width: 726px;
+            }
+            @media screen and (max-width: 750px){
+                width: 110%;
+            }
         }
     }
 
@@ -57,5 +63,35 @@
             border-radius: 20px;
             transform: scale(0.95);
         }
+    }
+
+    .about__item1 {
+        grid-area: a;
+        height: 590px;
+        aspect-ratio: 660/590;
+    }
+
+    .about__item2 {
+        grid-area: b;
+        height: 430px;
+        aspect-ratio: 660/430;
+        @media screen and (max-width: 800px){
+            display: none;
+        }
+    }
+
+    .about__item3 {
+        grid-area: c;
+        height: 430px;
+        aspect-ratio: 660/430;
+        @media screen and (max-width: 800px){
+            display: none;
+        }
+    }
+
+    .about__item4 {
+        grid-area: d;
+        height: 590px;
+        aspect-ratio: 660/590;
     }
 }

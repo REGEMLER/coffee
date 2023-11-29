@@ -12,8 +12,12 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     overflow-x: hidden;
+}
+
+main {
+    margin: 0 auto;
 }
 
 ul,
@@ -32,23 +36,24 @@ a {
     background-color: $light;
 	padding: 0 40px 40px 40px;
     overflow-x: hidden;
+    @media screen and (max-width: 440px){
+        padding: 0 16px 40px 16px;
+    }
 }
 
 .container {
-    width: 1360px;
-	//max-width: 1360px;
-	//min-width: 380px;
-	//width: 100%;
+	max-width: 1360px;
+	min-width: 348px;
+	width: 100%;
     overflow-x: hidden;
-}
-
-.inner{
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 .title {
     @include textStyle($font, $title, 75px, 600, $text-bg);
+    @media screen and (max-width: 680px){
+        font-size: $link;
+        line-height: 40px;
+    }
     span{
         font-style: italic;
 		color: $accent;
@@ -61,6 +66,10 @@ a {
 
 .link {
     @include textStyle($font, $text, 24px, 600, $text-bg);
+    @media screen and (max-width: 800px){
+        font-size: $link;
+        line-height: 40px;
+    }
 }
 
 .text {

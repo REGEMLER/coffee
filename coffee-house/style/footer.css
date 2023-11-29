@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: 0 auto;
+}
+
 ul,
 ol,
 li {
@@ -67,15 +71,17 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
-
-.container {
-  width: 1360px;
-  overflow-x: hidden;
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
 }
 
-.inner {
-  max-width: 1440px;
-  margin: 0 auto;
+.container {
+  max-width: 1360px;
+  min-width: 348px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .title {
@@ -84,6 +90,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -104,6 +116,12 @@ a {
   line-height: 24px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .text {
@@ -129,17 +147,39 @@ a {
   display: flex;
   background-color: #665F55;
   border-radius: 40px;
-  gap: 136px;
+  gap: 100px;
+}
+@media screen and (max-width: 1100px) {
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    max-height: 740px;
+    padding: 100px 60px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .footer__container {
+    gap: 0;
+    height: auto;
+    padding: 60px 16px;
+  }
 }
 
 .footer__content .footer__title {
   color: #E1D4C9;
+  max-width: 530px;
 }
 .footer__content .footer__media {
   margin: 40px 0;
   display: flex;
   align-items: center;
   gap: 12px;
+}
+@media screen and (max-width: 460px) {
+  .footer__content .footer__media {
+    margin-bottom: 0;
+  }
 }
 .footer__content .footer__media .footer__media-item {
   width: 60px;
@@ -173,22 +213,32 @@ a {
   margin: 35px 0 38px 0;
   color: #E1D4C9;
 }
-.footer__contacts .footer__contacts {
+@media screen and (max-width: 860px) {
+  .footer__contacts .footer__subtitle {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .footer__contacts .footer__subtitle {
+    margin: 40px 0;
+  }
+}
+.footer__contacts .footer__menu {
   display: flex;
   flex-direction: column;
   gap: 20px;
   transform: translateX(32px);
 }
-.footer__contacts .footer__contacts .footer__contact {
+.footer__contacts .footer__menu .footer__contact {
   max-width: 230px;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link {
+.footer__contacts .footer__menu .footer__contact .footer__link {
   display: inline-block;
   color: #E1D4C9;
   cursor: pointer;
   position: relative;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link::before {
+.footer__contacts .footer__menu .footer__contact .footer__link::before {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -196,7 +246,7 @@ a {
   transform: translateY(-50%);
   left: -32px;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link::after {
+.footer__contacts .footer__menu .footer__contact .footer__link::after {
   content: "";
   display: block;
   width: 1px;
@@ -205,24 +255,24 @@ a {
   transition: all linear 1s;
   position: absolute;
   bottom: -2px;
-  left: 0;
   right: 0;
+  left: -20%;
 }
 @media (hover: hover) {
-  .footer__contacts .footer__contacts .footer__contact .footer__link:hover::after {
-    width: 100%;
+  .footer__contacts .footer__menu .footer__contact .footer__link:hover::after {
+    width: 120%;
     background-color: #E1D4C9;
   }
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link1::before {
+.footer__contacts .footer__menu .footer__contact .footer__link1::before {
   content: url(../icon/mark.svg);
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link2::before {
+.footer__contacts .footer__menu .footer__contact .footer__link2::before {
   content: url(../icon/Path.svg);
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link3 {
+.footer__contacts .footer__menu .footer__contact .footer__link3 {
   pointer-events: none;
 }
-.footer__contacts .footer__contacts .footer__contact .footer__link3::before {
+.footer__contacts .footer__menu .footer__contact .footer__link3::before {
   content: url(../icon/clock.svg);
 }/*# sourceMappingURL=footer.css.map */

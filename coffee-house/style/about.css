@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: 0 auto;
+}
+
 ul,
 ol,
 li {
@@ -67,15 +71,17 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
-
-.container {
-  width: 1360px;
-  overflow-x: hidden;
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
 }
 
-.inner {
-  max-width: 1440px;
-  margin: 0 auto;
+.container {
+  max-width: 1360px;
+  min-width: 348px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .title {
@@ -84,6 +90,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -104,6 +116,12 @@ a {
   line-height: 24px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .text {
@@ -137,21 +155,14 @@ a {
   grid-row-gap: 40px;
   grid-template-areas: "a c" "a c" "a c" "a d" "b d" "b d" "b d";
 }
-.about__grid .about__item1 {
-  grid-area: a;
-  height: 590px;
-}
-.about__grid .about__item2 {
-  grid-area: b;
-  height: 430px;
-}
-.about__grid .about__item3 {
-  grid-area: c;
-  height: 430px;
-}
-.about__grid .about__item4 {
-  grid-area: d;
-  height: 590px;
+@media screen and (max-width: 800px) {
+  .about__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
 }
 .about__grid .about__item {
   width: 660px;
@@ -161,16 +172,77 @@ a {
   justify-content: center;
   overflow: hidden;
 }
+@media screen and (max-width: 1432px) {
+  .about__grid .about__item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about__grid .about__item {
+    width: 684px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about__grid .about__item {
+    width: 100%;
+  }
+}
 .about__grid .about__item img {
   width: 726px;
   height: 726px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all linear 0.7s;
+  aspect-ratio: 1/1;
+}
+@media screen and (max-width: 1432px) {
+  .about__grid .about__item img {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about__grid .about__item img {
+    width: 726px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about__grid .about__item img {
+    width: 110%;
+  }
 }
 @media (hover: hover) {
   .about__grid .about__item:hover img {
     border-radius: 20px;
     transform: scale(0.95);
   }
+}
+.about__grid .about__item1 {
+  grid-area: a;
+  height: 590px;
+  aspect-ratio: 660/590;
+}
+.about__grid .about__item2 {
+  grid-area: b;
+  height: 430px;
+  aspect-ratio: 660/430;
+}
+@media screen and (max-width: 800px) {
+  .about__grid .about__item2 {
+    display: none;
+  }
+}
+.about__grid .about__item3 {
+  grid-area: c;
+  height: 430px;
+  aspect-ratio: 660/430;
+}
+@media screen and (max-width: 800px) {
+  .about__grid .about__item3 {
+    display: none;
+  }
+}
+.about__grid .about__item4 {
+  grid-area: d;
+  height: 590px;
+  aspect-ratio: 660/590;
 }/*# sourceMappingURL=about.css.map */

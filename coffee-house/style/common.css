@@ -32,6 +32,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: 0 auto;
+}
+
 ul,
 ol,
 li {
@@ -49,15 +53,17 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
-
-.container {
-  width: 1360px;
-  overflow-x: hidden;
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
 }
 
-.inner {
-  max-width: 1440px;
-  margin: 0 auto;
+.container {
+  max-width: 1360px;
+  min-width: 348px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .title {
@@ -66,6 +72,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -86,6 +98,12 @@ a {
   line-height: 24px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .text {

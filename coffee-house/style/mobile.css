@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: 0 auto;
+}
+
 ul,
 ol,
 li {
@@ -67,15 +71,17 @@ a {
   padding: 0 40px 40px 40px;
   overflow-x: hidden;
 }
-
-.container {
-  width: 1360px;
-  overflow-x: hidden;
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 0 16px 40px 16px;
+  }
 }
 
-.inner {
-  max-width: 1440px;
-  margin: 0 auto;
+.container {
+  max-width: 1360px;
+  min-width: 348px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .title {
@@ -84,6 +90,12 @@ a {
   line-height: 75px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .title span {
   font-style: italic;
@@ -104,6 +116,12 @@ a {
   line-height: 24px;
   font-weight: 600;
   color: #403F3D;
+}
+@media screen and (max-width: 800px) {
+  .link {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .text {
@@ -126,21 +144,54 @@ a {
   display: flex;
   gap: 100px;
 }
+@media screen and (max-width: 1100px) {
+  .mobile__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 440px) {
+  .mobile__container {
+    gap: 40px;
+  }
+}
 .mobile__container .mobile__content {
   align-self: center;
   max-width: 50%;
 }
+@media screen and (max-width: 1100px) {
+  .mobile__container .mobile__content {
+    max-width: 100%;
+  }
+}
 .mobile__container .mobile__content .mobile__title {
   max-width: 600px;
+}
+@media screen and (max-width: 1100px) {
+  .mobile__container .mobile__content .mobile__title {
+    max-width: 100%;
+  }
 }
 .mobile__container .mobile__content .mobile__text {
   max-width: 630px;
   margin: 40px 0;
 }
+@media screen and (max-width: 1100px) {
+  .mobile__container .mobile__content .mobile__text {
+    max-width: 100%;
+  }
+}
 .mobile__container .mobile__content .mobile__buttons {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media screen and (max-width: 440px) {
+  .mobile__container .mobile__content .mobile__buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .mobile__container .mobile__content .mobile__buttons .mobile__btn {
   border: 1px solid #665F55;
@@ -197,7 +248,26 @@ a {
 .mobile__container .mobile__img {
   width: 630px;
   height: 630px;
+  aspect-ratio: 1/1;
   overflow: hidden;
+}
+@media screen and (max-width: 1432px) {
+  .mobile__container .mobile__img {
+    width: 46%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .mobile__container .mobile__img {
+    width: 630px;
+    height: 630px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mobile__container .mobile__img {
+    width: 348px;
+    height: 348px;
+  }
 }
 .mobile__container .mobile__img img {
   width: 100%;

@@ -5,24 +5,45 @@
     margin: 60px auto 100px auto;
     display: flex;
     gap: 100px;
+    @media screen and (max-width: 1100px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 440px){
+        gap: 40px;
+    }
 
     .mobile__content {
         align-self: center;
         max-width: 50%;
+        @media screen and (max-width: 1100px){
+            max-width: 100%;
+        }
 
         .mobile__title {
             max-width: 600px;
+            @media screen and (max-width: 1100px){
+                max-width: 100%;
+            }
         }
 
         .mobile__text {
             max-width: 630px;
             margin: 40px 0;
+            @media screen and (max-width: 1100px){
+                max-width: 100%;
+            }
         }
 
         .mobile__buttons {
             display: flex;
             align-items: center;
             gap: 20px;
+            @media screen and (max-width: 440px){
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
             .mobile__btn {
                 border: 1px solid $dark;
@@ -84,7 +105,20 @@
     .mobile__img {
         width: 630px;
         height: 630px;
+        aspect-ratio: 1/1;
         overflow: hidden;
+        @media screen and (max-width: 1432px){
+            width: 46%;
+            height: auto;
+        }
+        @media screen and (max-width: 1100px){
+            width: 630px;
+            height: 630px;
+        }
+        @media screen and (max-width: 700px){
+            width: 348px;
+            height: 348px;
+        }
 
         img {
             width: 100%;

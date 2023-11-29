@@ -9,12 +9,25 @@
     display: flex;
     background-color: $dark;
     border-radius: 40px;
-    gap: 136px;
+    gap: 100px;
+    @media screen and (max-width: 1100px){
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        max-height: 740px;
+        padding: 100px 60px;
+    }
+    @media screen and (max-width: 460px){
+        gap: 0;
+        height: auto;
+        padding: 60px 16px;
+    }
 }
 
 .footer__content {
     .footer__title {
         color: $light;
+        max-width: 530px;
     }
 
     .footer__media {
@@ -22,6 +35,9 @@
         display: flex;
         align-items: center;
         gap: 12px;
+        @media screen and (max-width: 460px){
+            margin-bottom: 0;
+        }
 
         .footer__media-item {
             width: 60px;
@@ -60,9 +76,15 @@
     .footer__subtitle {
         margin: 35px 0 38px 0;
         color: $light;
+        @media screen and (max-width: 860px){
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width: 460px){
+            margin: 40px 0;
+        }
     }
 
-    .footer__contacts {
+    .footer__menu {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -94,15 +116,15 @@
                     transition: all linear 1s;
                     position: absolute;
                     bottom: -2px;
-                    left: 0;
                     right: 0;
+                    left: -20%;
                 }
             }
 
             @media(hover: hover){
                 .footer__link:hover {
                     &::after {
-                        width: 100%;
+                        width: 120%;
                         background-color: $light;
                     }
                 }

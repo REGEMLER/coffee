@@ -2,22 +2,43 @@
 @import "common";
 
 .enjoy__container {
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     height: 644px;
     padding: 100px 0 100px 100px;
     border-radius: 40px;
     background-image: url(../IMG/img-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     overflow: hidden;
+    @media screen and (max-width: 1432px){
+        padding: 7% 0 7% 7%;
+    }
+    @media screen and (max-width: 800px){
+        padding: 100px 20px 100px 60px;
+    }
+    @media screen and (max-width: 730px){
+        padding: 60px 16px;
+        height: auto;
+    }
 }
 
 .enjoy__content {
     max-width: 50%;
+    @media screen and (max-width: 1432px){
+        max-width: 90%;
+    }
+    @media screen and (max-width: 400px){
+        max-width: 100%;
+    }
 
     .enjoy__title {
         max-width: 530px;
         @include textStyle($font, $h1, 75px, 600, $light);
+        @media screen and (max-width: 680px){
+            font-size: 42px;
+            line-height: 48.3px;
+        }
         span {
             color: $accent;
             font-style: italic;
@@ -28,6 +49,10 @@
         max-width: 530px;
         margin: 42px 0;
         color: $light;
+
+        @media screen and (max-width: 400px){
+            margin: 40px 0;
+        }
     }
 
     .enjoy__btn {
@@ -37,7 +62,11 @@
         background-color: $light;
         text-align: center;
         position: relative;
+        @include textStyle($font, $text, 24px, 600, $text-bg);
         transition: all linear .5s;
+        @media screen and (max-width: 800px){
+            padding-right: 30px;
+        }
 
         &::after {
             content: url(../icon/coffee-cup.svg);
@@ -46,14 +75,18 @@
             opacity: 0;
             visibility: hidden;
             position: absolute;
-            right: 60px;
+            right: 65px;
             transition: all linear .5s;
+            @media screen and (max-width: 800px){
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
 
     @media(hover: hover) {
         .enjoy__btn:hover {
-            padding-right: 40px;
+            padding-right: 30px;
             &::after {
                 opacity: 1;
                 visibility: visible;
