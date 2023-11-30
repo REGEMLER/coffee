@@ -117,7 +117,7 @@ a {
   font-weight: 600;
   color: #403F3D;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 770px) {
   .link {
     font-size: 32px;
     line-height: 40px;
@@ -148,6 +148,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
   overflow: hidden;
 }
 @media screen and (max-width: 1432px) {
@@ -167,7 +168,25 @@ a {
   }
 }
 
+.video {
+  min-width: 120%;
+  min-height: 644px;
+  width: 120%;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -20%;
+}
+@media screen and (max-width: 730px) {
+  .video {
+    min-height: 800px;
+  }
+}
+
 .enjoy__content {
+  position: relative;
+  z-index: 2;
   max-width: 50%;
 }
 @media screen and (max-width: 1432px) {

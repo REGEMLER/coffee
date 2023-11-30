@@ -10,6 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    position: relative;
     overflow: hidden;
     @media screen and (max-width: 1432px){
         padding: 7% 0 7% 7%;
@@ -23,7 +24,23 @@
     }
 }
 
+.video {
+    min-width: 120%;
+    min-height: 644px;
+    width: 120%;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    @media screen and (max-width: 730px){
+        min-height: 800px;
+    }
+}
+
 .enjoy__content {
+    position: relative;
+    z-index: 2;
     max-width: 50%;
     @media screen and (max-width: 1432px){
         max-width: 90%;
