@@ -8,12 +8,22 @@ let isOpen = false;
 
 function show(event) {
     event.stopPropagation();
+    if(isOpen) {
+        hide();
+        return;
+    }
     document.body.style.overflowY = "hidden";
     line1.classList.add("burger__item1_active");
     line2.classList.add("burger__item2_active");
     headerNav.classList.add("header__nav_active");
     header.classList.add("header__container_active");
     isOpen = true;
+}
+
+function close(event) {
+    const li = event.target.closest('li');
+    if (!li) return; 
+    hide();
 }
 
 function hide() {
@@ -27,4 +37,9 @@ function hide() {
 }
 
 burger.addEventListener("click", show);
-document.body.addEventListener("click", hide)
+headerNav.addEventListener("click", close);
+window.addEventListener("resize", function(){
+    if(this.window.innerWidth > 770) {
+        hide();
+    }
+})

@@ -99,7 +99,7 @@ a {
   font-weight: 600;
   color: #403F3D;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 770px) {
   .link {
     font-size: 32px;
     line-height: 40px;
