@@ -37,9 +37,9 @@ const products = {
     },
     {
       "id": "2",
-      "name": "Honey raf",
-      "description": "Espresso with frothed milk, cream and aromatic honey",
-      "price": "5.50",
+      "name": "Kahlua coffee",
+      "description": "Classic coffee with milk and Kahlua liqueur under a cap of frothed milk",
+      "price": "7.00",
       "src" : "IMG/coffee-2.jpg",
       "sizes": {
         "s": {

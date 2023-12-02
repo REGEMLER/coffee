@@ -139,6 +139,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 .about__container {
   margin: 100px auto 60px auto;
 }

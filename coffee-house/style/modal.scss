@@ -13,7 +13,17 @@
     right: 0;
     bottom: 0;
     background-color: $backdrop;
+    visibility: visible;
+    opacity: 1;
     z-index: 100;
+    transition: all linear .5s;
+}
+
+.modal_passive {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -100;
+    transition: all linear .5s;
 }
 
 .modal__card {
@@ -23,9 +33,18 @@
     padding: 16px;
     background-color: $light;
     border-radius: 40px;
+    @media screen and (max-width: 900px){
+        width: 680px;
+    }
+    @media screen and (max-width: 720px){
+        width: 90%;
+    }
     .modal__img {
         width: 300px;
         height: 300px;
+        @media screen and (max-width: 630px){
+            display: none;
+        }
         img {
             border-radius: 20px;
             object-fit: cover;
@@ -56,6 +75,12 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    @media screen and (max-width: 900px){
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 600px){
+        max-width: 90%;
+    }
 
     .modal__radio {
         display: none;
@@ -146,6 +171,9 @@
     gap: 8px;
     padding: 12px 0;
     margin-bottom: 20px;
+    @media screen and (max-width: 800px){
+        margin-bottom: 0;
+    }
     .modal__logo {
         width: 16px;
         height: 16px;
@@ -158,6 +186,9 @@
     .modal__small {
         max-width: 410px;
         @include textStyle($font, $small-text, 14px, 600, $text-bg);
+        @media screen and (max-width: 800px){
+            max-width: 300px;
+        }
     }
 }
 
@@ -171,6 +202,12 @@
     cursor: pointer;
     text-align: center;
     transition: all linear 0.5s;
+    @media screen and (max-width: 800px){
+        width: 380px;
+    }
+    @media screen and (max-width: 600px){
+        width: 310px;
+    }
 }
 
 .modal__btn:hover {

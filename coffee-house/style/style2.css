@@ -1403,7 +1403,17 @@ a {
   right: 0;
   bottom: 0;
   background-color: rgba(64, 63, 61, 0.8);
+  visibility: visible;
+  opacity: 1;
   z-index: 100;
+  transition: all linear 0.5s;
+}
+
+.modal_passive {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -100;
+  transition: all linear 0.5s;
 }
 
 .modal__card {
@@ -1414,9 +1424,24 @@ a {
   background-color: #E1D4C9;
   border-radius: 40px;
 }
+@media screen and (max-width: 900px) {
+  .modal__card {
+    width: 680px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .modal__card {
+    width: 90%;
+  }
+}
 .modal__card .modal__img {
   width: 300px;
   height: 300px;
+}
+@media screen and (max-width: 630px) {
+  .modal__card .modal__img {
+    display: none;
+  }
 }
 .modal__card .modal__img img {
   border-radius: 20px;
@@ -1447,6 +1472,16 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+@media screen and (max-width: 900px) {
+  .modal__buttons {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .modal__buttons {
+    max-width: 90%;
+  }
 }
 .modal__buttons .modal__radio {
   display: none;
@@ -1541,6 +1576,11 @@ a {
   padding: 12px 0;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 800px) {
+  .modal__info {
+    margin-bottom: 0;
+  }
+}
 .modal__info .modal__logo {
   width: 16px;
   height: 16px;
@@ -1559,6 +1599,11 @@ a {
   font-weight: 600;
   color: #403F3D;
 }
+@media screen and (max-width: 800px) {
+  .modal__info .modal__small {
+    max-width: 300px;
+  }
+}
 
 .modal__btn {
   width: 438px;
@@ -1574,6 +1619,16 @@ a {
   cursor: pointer;
   text-align: center;
   transition: all linear 0.5s;
+}
+@media screen and (max-width: 800px) {
+  .modal__btn {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .modal__btn {
+    width: 310px;
+  }
 }
 
 .modal__btn:hover {

@@ -139,6 +139,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 .footer__container {
   width: 100% auto;
   margin: 0 auto;
