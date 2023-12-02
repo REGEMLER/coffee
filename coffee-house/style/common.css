@@ -119,4 +119,9 @@ a {
   height: 64px;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
 }/*# sourceMappingURL=common.css.map */

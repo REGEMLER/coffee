@@ -139,6 +139,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 @font-face {
   font-family: "Inter";
   src: url(../fonts/Inter-Regular.otf);
@@ -278,6 +283,11 @@ a {
   height: 64px;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
 }
 
 .header__container {
@@ -654,6 +664,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 .enjoy__container {
   margin: 20px auto 0 auto;
   height: 644px;
@@ -929,6 +944,11 @@ a {
   height: 64px;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
 }
 
 .favorites__container {
@@ -1238,6 +1258,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 .about__container {
   margin: 100px auto 60px auto;
 }
@@ -1485,6 +1510,11 @@ a {
   height: 64px;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
 }
 
 .mobile__container {
@@ -1765,6 +1795,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 .footer__container {
   width: 100% auto;
   margin: 0 auto;
@@ -2042,6 +2077,11 @@ a {
   height: 64px;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
 }
 
 .modal {

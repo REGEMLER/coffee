@@ -139,6 +139,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 @font-face {
   font-family: "Inter";
   src: url(../fonts/Inter-Regular.otf);
@@ -278,6 +283,11 @@ a {
   height: 64px;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
 }
 
 .header__container {
@@ -654,6 +664,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 .main__container {
   margin: 20px auto 0 auto;
   padding-bottom: 100px;
@@ -767,14 +782,25 @@ a {
   align-items: center;
   grid-template-areas: "a b c d" "e f g h";
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1000px) {
   .main__grid {
-    grid-template-areas: "a b" "c d";
+    grid-column-gap: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main__grid {
+    grid-column-gap: 10px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .main__grid {
+    grid-column-gap: 40px;
+    grid-template-areas: "a b" "c d" "e f" "g h";
   }
 }
 @media screen and (max-width: 750px) {
   .main__grid {
-    grid-template-areas: "a" "b" "c" "d";
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h";
   }
 }
 .main__grid .main__card {
@@ -789,15 +815,15 @@ a {
 @media screen and (max-width: 1432px) {
   .main__grid .main__card {
     width: 100%;
-    height: 550px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .main__grid .main__card {
     height: 600px;
   }
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 850px) {
+  .main__grid .main__card {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 770px) {
   .main__grid .main__card {
     width: 310px;
     height: 506px;
@@ -814,7 +840,14 @@ a {
 }
 @media screen and (max-width: 1432px) {
   .main__grid .main__card .card__img {
+    max-width: 100%;
     width: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .main__grid .main__card .card__img {
+    width: 100%;
+    height: 310px;
   }
 }
 .main__grid .main__card .card__img img {
@@ -864,7 +897,7 @@ a {
 .main__grid .main__card5 {
   grid-area: e;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 770px) {
   .main__grid .main__card5 {
     display: none;
   }
@@ -872,7 +905,7 @@ a {
 .main__grid .main__card6 {
   grid-area: f;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 770px) {
   .main__grid .main__card6 {
     display: none;
   }
@@ -880,7 +913,7 @@ a {
 .main__grid .main__card7 {
   grid-area: g;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 770px) {
   .main__grid .main__card7 {
     display: none;
   }
@@ -888,16 +921,22 @@ a {
 .main__grid .main__card8 {
   grid-area: h;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 770px) {
   .main__grid .main__card8 {
     display: none;
   }
+}
+.main__grid .card__visible {
+  display: block;
+}
+.main__grid .card__invisible {
+  display: none;
 }
 
 .main__refresh {
   display: none;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 770px) {
   .main__refresh {
     display: flex;
     align-items: center;
@@ -911,6 +950,10 @@ a {
     cursor: pointer;
     transition: all linear 0.7s;
   }
+}
+
+.main__refresh_passive {
+  display: none;
 }
 
 @media (hover: hover) {
@@ -1057,6 +1100,11 @@ a {
   height: 64px;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
 }
 
 .footer__container {
@@ -1338,6 +1386,11 @@ a {
   cursor: pointer;
 }
 
+.blur {
+  opacity: 0.3;
+  transition: all linear 0.5s;
+}
+
 .modal {
   width: 100vw;
   height: 100vh;
@@ -1362,11 +1415,11 @@ a {
   border-radius: 40px;
 }
 .modal__card .modal__img {
-  width: 308px;
-  height: 308px;
-  border-radius: 40px;
+  width: 300px;
+  height: 300px;
 }
 .modal__card .modal__img img {
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -1393,7 +1446,6 @@ a {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
 }
 .modal__buttons .modal__radio {
@@ -1441,16 +1493,16 @@ a {
   transition: all ease-in-out 0.5s;
 }
 
-.modal__button1 {
-  width: 115px;
+.modal__button1, .modal__button2, .modal__button3 {
+  width: 120px;
 }
 
-.modal__button2 {
-  width: 90px;
+.modal__button4, .modal__button6 {
+  width: 108px;
 }
 
-.modal__button3 {
-  width: 124px;
+.modal__button5 {
+  width: 142px;
 }
 
 @media (hover: hover) {
@@ -1500,6 +1552,7 @@ a {
      object-fit: cover;
 }
 .modal__info .modal__small {
+  max-width: 410px;
   font-family: "Inter", sans-serif;
   font-size: 10px;
   line-height: 14px;
@@ -1508,7 +1561,7 @@ a {
 }
 
 .modal__btn {
-  width: 100px;
+  width: 438px;
   height: 44px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -1516,8 +1569,10 @@ a {
   font-weight: 600;
   color: #403F3D;
   background-color: transparent;
+  border: 1px solid #665F55;
   border-radius: 100px;
   cursor: pointer;
+  text-align: center;
   transition: all linear 0.5s;
 }
 
