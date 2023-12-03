@@ -174,14 +174,18 @@ a {
 }
 
 .video {
-  min-width: 120%;
+  min-width: 100%;
   min-height: 644px;
-  width: 120%;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   position: absolute;
   top: 0;
-  left: -20%;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media screen and (max-width: 730px) {
   .video {

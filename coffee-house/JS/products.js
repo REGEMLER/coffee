@@ -7,33 +7,15 @@ const products = {
       "price": "7.00",
       "src" : "IMG/coffee-1.jpg",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Cinnamon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Cinnamon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "2",
@@ -42,33 +24,15 @@ const products = {
       "price": "7.00",
       "src" : "IMG/coffee-2.jpg",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Cinnamon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Cinnamon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "3",
@@ -77,33 +41,15 @@ const products = {
       "price": "5.50",
       "src" : "IMG/coffee-3.jpg",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Cinnamon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Cinnamon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "4",
@@ -112,33 +58,15 @@ const products = {
       "price": "5.00",
       "src" : "IMG/coffee-4.jpg",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Cinnamon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Cinnamon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "5",
@@ -147,33 +75,15 @@ const products = {
       "price": "4.50",
       "src" : "IMG/coffee-5.jpg",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Cinnamon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Cinnamon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "6",
@@ -182,33 +92,15 @@ const products = {
       "price": "5.50",
       "src" : "IMG/coffee-6.jpg",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Cinnamon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Cinnamon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "7",
@@ -217,33 +109,15 @@ const products = {
       "price": "5.50",
       "src" : "IMG/coffee-7.jpg",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Cinnamon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Cinnamon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "8",
@@ -252,33 +126,15 @@ const products = {
       "price": "6.50",
       "src" : "IMG/coffee-8.jpg",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Cinnamon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Cinnamon",
+        "three": "Syrup",
+      },
     }
   ],
   tea : [
@@ -289,33 +145,15 @@ const products = {
       "price": "4.50",
       "src" : "IMG/tea-1.png",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Lemon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Lemon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "10",
@@ -324,33 +162,15 @@ const products = {
       "price": "5.00",
       "src" : "IMG/tea-2.png",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Lemon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Lemon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "11",
@@ -359,33 +179,15 @@ const products = {
       "price": "5.00",
       "src" : "IMG/tea-3.png",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Lemon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Lemon",
+        "three": "Syrup",
+      },
     },
     {
       "id": "12",
@@ -394,33 +196,15 @@ const products = {
       "price": "5.50",
       "src" : "IMG/tea-4.png",
       "sizes": {
-        "s": {
-          "size": "200 ml",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "300 ml",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "400 ml",
-          "add-price": "1.00"
-        }
+        "s": "200 ml",
+        "m": "300 ml",
+        "l": "400 ml",
       },
-      "additives": [
-        {
-          "name": "Sugar",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Lemon",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Syrup",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Sugar",
+        "two": "Lemon",
+        "three": "Syrup",
+      },
     }
   ],
   dessert : [
@@ -431,33 +215,15 @@ const products = {
       "price": "3.50",
       "src" : "IMG/dessert-1.png",
       "sizes": {
-        "s": {
-          "size": "50 g",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "100 g",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "200 g",
-          "add-price": "1.00"
-        }
+        "s": "50 g",
+        "m": "100 g",
+        "l": "200 g",
       },
-      "additives": [
-        {
-          "name": "Berries",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Nuts",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Jam",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Berries",
+        "two": "Nuts",
+        "three": "Jam",
+      },
     },
     {
       "id": "14",
@@ -466,33 +232,15 @@ const products = {
       "price": "4.00",
       "src" : "IMG/dessert-2.png",
       "sizes": {
-        "s": {
-          "size": "50 g",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "100 g",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "200 g",
-          "add-price": "1.00"
-        }
+        "s": "50 g",
+        "m": "100 g",
+        "l": "200 g",
       },
-      "additives": [
-        {
-          "name": "Berries",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Nuts",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Jam",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Berries",
+        "two": "Nuts",
+        "three": "Jam",
+      },
     },
     {
       "id": "15",
@@ -501,33 +249,15 @@ const products = {
       "price": "4.50",
       "src" : "IMG/dessert-3.png",
       "sizes": {
-        "s": {
-          "size": "50 g",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "100 g",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "200 g",
-          "add-price": "1.00"
-        }
+        "s": "50 g",
+        "m": "100 g",
+        "l": "200 g",
       },
-      "additives": [
-        {
-          "name": "Berries",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Nuts",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Jam",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Berries",
+        "two": "Nuts",
+        "three": "Jam",
+      },
     },
     {
       "id": "16",
@@ -536,33 +266,15 @@ const products = {
       "price": "4.00",
       "src" : "IMG/dessert-4.png",
       "sizes": {
-        "s": {
-          "size": "50 g",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "100 g",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "200 g",
-          "add-price": "1.00"
-        }
+        "s": "50 g",
+        "m": "100 g",
+        "l": "200 g",
       },
-      "additives": [
-        {
-          "name": "Berries",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Nuts",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Jam",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Berries",
+        "two": "Nuts",
+        "three": "Jam",
+      },
     },
     {
       "id": "17",
@@ -571,33 +283,15 @@ const products = {
       "price": "4.50",
       "src" : "IMG/dessert-5.png",
       "sizes": {
-        "s": {
-          "size": "50 g",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "100 g",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "200 g",
-          "add-price": "1.00"
-        }
+        "s": "50 g",
+        "m": "100 g",
+        "l": "200 g",
       },
-      "additives": [
-        {
-          "name": "Berries",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Nuts",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Jam",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Berries",
+        "two": "Nuts",
+        "three": "Jam",
+      },
     },
     {
       "id": "18",
@@ -606,33 +300,15 @@ const products = {
       "price": "4.50",
       "src" : "IMG/dessert-6.png",
       "sizes": {
-        "s": {
-          "size": "50 g",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "100 g",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "200 g",
-          "add-price": "1.00"
-        }
+        "s": "50 g",
+        "m": "100 g",
+        "l": "200 g",
       },
-      "additives": [
-        {
-          "name": "Berries",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Nuts",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Jam",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Berries",
+        "two": "Nuts",
+        "three": "Jam",
+      },
     },
     {
       "id": "19",
@@ -641,33 +317,15 @@ const products = {
       "price": "5.50",
       "src" : "IMG/dessert-7.png",
       "sizes": {
-        "s": {
-          "size": "50 g",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "100 g",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "200 g",
-          "add-price": "1.00"
-        }
+        "s": "50 g",
+        "m": "100 g",
+        "l": "200 g",
       },
-      "additives": [
-        {
-          "name": "Berries",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Nuts",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Jam",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Berries",
+        "two": "Nuts",
+        "three": "Jam",
+      },
     },
     {
       "id": "20",
@@ -676,33 +334,15 @@ const products = {
       "price": "6.50",
       "src" : "IMG/dessert-8.png",
       "sizes": {
-        "s": {
-          "size": "50 g",
-          "add-price": "0.00"
-        },
-        "m": {
-          "size": "100 g",
-          "add-price": "0.50"
-        },
-        "l": {
-          "size": "200 g",
-          "add-price": "1.00"
-        }
+        "s": "50 g",
+        "m": "100 g",
+        "l": "200 g",
       },
-      "additives": [
-        {
-          "name": "Berries",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Nuts",
-          "add-price": "0.50"
-        },
-        {
-          "name": "Jam",
-          "add-price": "0.50"
-        }
-      ]
+      "additives": {
+        "one": "Berries",
+        "two": "Nuts",
+        "three": "Jam",
+      },
     }
   ],
 }

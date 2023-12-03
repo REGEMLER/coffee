@@ -699,14 +699,18 @@ a {
 }
 
 .video {
-  min-width: 120%;
+  min-width: 100%;
   min-height: 644px;
-  width: 120%;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   position: absolute;
   top: 0;
-  left: -20%;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media screen and (max-width: 730px) {
   .video {
@@ -2127,6 +2131,12 @@ a {
     width: 90%;
   }
 }
+@media screen and (max-width: 630px) {
+  .modal__card {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .modal__card .modal__img {
   width: 300px;
   height: 300px;
@@ -2147,6 +2157,11 @@ a {
 .modal__title {
   color: #403F3D;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 630px) {
+  .modal__title {
+    text-align: center;
+  }
 }
 
 .modal__text {
@@ -2225,12 +2240,16 @@ a {
   width: 120px;
 }
 
-.modal__button4, .modal__button6 {
-  width: 108px;
+.modal__button4 {
+  width: 120px;
 }
 
 .modal__button5 {
-  width: 142px;
+  width: 140px;
+}
+
+.modal__button6 {
+  width: 108px;
 }
 
 @media (hover: hover) {
@@ -2292,7 +2311,7 @@ a {
   font-weight: 600;
   color: #403F3D;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .modal__info .modal__small {
     max-width: 300px;
   }
@@ -2318,9 +2337,11 @@ a {
     width: 380px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
   .modal__btn {
+    display: block;
     width: 310px;
+    margin: 0 auto;
   }
 }
 

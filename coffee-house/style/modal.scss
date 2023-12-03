@@ -39,6 +39,10 @@
     @media screen and (max-width: 720px){
         width: 90%;
     }
+    @media screen and (max-width: 630px){
+        justify-content: center;
+        align-items: center;
+    }
     .modal__img {
         width: 300px;
         height: 300px;
@@ -57,6 +61,9 @@
 .modal__title {
     color: $text-bg;
     margin-bottom: 12px;
+    @media screen and (max-width: 630px){
+        text-align: center;
+    }
 }
 
 .modal__text {
@@ -127,12 +134,16 @@
     width: 120px;
 }
 
-.modal__button4, .modal__button6 {
-    width: 108px;
+.modal__button4 {
+    width: 120px;
 }
 
 .modal__button5 {
-    width: 142px;
+    width: 140px;
+}
+
+.modal__button6 {
+    width: 108px;
 }
 
 @media(hover: hover){
@@ -186,7 +197,7 @@
     .modal__small {
         max-width: 410px;
         @include textStyle($font, $small-text, 14px, 600, $text-bg);
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 500px){
             max-width: 300px;
         }
     }
@@ -205,8 +216,10 @@
     @media screen and (max-width: 800px){
         width: 380px;
     }
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 630px){
+        display: block;
         width: 310px;
+        margin: 0 auto;
     }
 }
 
