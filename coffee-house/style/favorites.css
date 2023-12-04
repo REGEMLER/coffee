@@ -238,12 +238,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(1150px);
-}
-@media screen and (max-width: 1432px) {
-  .favorites__carusel .favorites__slider {
-    transform: translate(100%);
-  }
+  transform: translateX(100%);
+  transition: all ease-in-out 0.5s;
 }
 .favorites__carusel .favorites__slider .favorites__card {
   min-width: 1150px;
@@ -290,6 +286,12 @@ a {
   text-align: center;
   margin: 16px auto 0 auto;
 }
+.favorites__carusel .slide__center {
+  transform: translateX(0);
+}
+.favorites__carusel .slide__right {
+  transform: translateX(-100%);
+}
 
 .favorites__pagination {
   width: 145px;
@@ -306,6 +308,10 @@ a {
   border-radius: 100px;
   background-color: #C1B6AD;
 }
-.favorites__pagination .pagination__item_active {
+.favorites__pagination .pagination__item .bar__inner {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 100px;
   background-color: #665F55;
 }/*# sourceMappingURL=favorites.css.map */

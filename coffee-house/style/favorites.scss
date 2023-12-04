@@ -86,10 +86,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translateX(1150px);
-        @media screen and (max-width: 1432px){
-            transform: translate(100%);
-        }
+        transform: translateX(100%);
+        transition: all ease-in-out 0.5s;
         .favorites__card {
             min-width: 1150px;
             display: flex;
@@ -136,6 +134,12 @@
             }
         }
     }
+    .slide__center {
+        transform: translateX(0);
+    }
+    .slide__right {
+        transform: translateX(-100%);
+    }
 }
 
 .favorites__pagination {
@@ -152,9 +156,12 @@
         height: 4px;
         border-radius: 100px;
         background-color: $border;
-    }
-
-    .pagination__item_active {
-        background-color: $dark;
+        .bar__inner {
+            display: block;
+            width: 0;
+            height: 100%;
+            border-radius: 100px;
+            background-color: $dark;
+        }
     }
 }
