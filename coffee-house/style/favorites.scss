@@ -65,6 +65,7 @@
 .favorites__carusel {
     max-width: 1150px;
     overflow-x: hidden;
+    cursor: wait;
     @media screen and (max-width: 1432px){
         max-width: 84.5%;
         width: 84,5%;
@@ -80,6 +81,7 @@
     @media screen and (max-width: 640px){
         max-width: 100%;
         width: 100%;
+        cursor: grab;
     }
 
     .favorites__slider{

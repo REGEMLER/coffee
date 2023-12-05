@@ -209,6 +209,7 @@ a {
 .favorites__carusel {
   max-width: 1150px;
   overflow-x: hidden;
+  cursor: wait;
 }
 @media screen and (max-width: 1432px) {
   .favorites__carusel {
@@ -232,6 +233,7 @@ a {
   .favorites__carusel {
     max-width: 100%;
     width: 100%;
+    cursor: grab;
   }
 }
 .favorites__carusel .favorites__slider {
