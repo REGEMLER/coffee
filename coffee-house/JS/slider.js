@@ -20,6 +20,16 @@ carusel.addEventListener("dragstart", (e) => {
     e.stopPropagation();
     e.preventDefault();
 });
+carusel.addEventListener("mousedown", (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    stopTimer();
+});
+carusel.addEventListener("mouseup", (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    stopTimer();
+});
 
 function clear() {
     clearInterval(interval);
@@ -130,15 +140,18 @@ function touchStart(event) {
     if(window.innerWidth > 640) return;
     event.preventDefault();
     firstPoint = event.touches[0].pageX;
+    endPoint = 0;
     stopTimer();
 }
 
-function touchEnd(event) {
+function touchMove(event) {
+    endPoint = event.touches[0].pageX;
+}
+
+function touchEnd() {
     if(window.innerWidth > 640) return;
     let result = Math.abs(endPoint - firstPoint);
-    endPoint = event.touches[0].pageX;
-    alert(endPoint)
-    if(result < 10) {
+    if(result < 10 || endPoint === 0) {
         startTimer()
     } else {
         if ( firstPoint > endPoint ) {
@@ -149,5 +162,5 @@ function touchEnd(event) {
     }
 }
 carusel.addEventListener("touchstart", touchStart);
+carusel.addEventListener("touchmove", touchMove);
 carusel.addEventListener("touchend", touchEnd);
-
