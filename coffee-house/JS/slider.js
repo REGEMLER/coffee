@@ -92,17 +92,27 @@ function back() {
     sliderInterval = setInterval(forward, 5000);
 }
 
-function onCarusel(){
+function stopTimer() {
     clearInterval(interval);
     clearInterval(sliderInterval);
 }
 
-function offCarusel(){
+function startTimer() {
     let reminder = 5000 - (activeBar.clientWidth * 5000 / 40);
     timeout = setTimeout(()=>{
         forward();
     }, reminder)
     setBar();
+}
+
+function onCarusel(){
+    if(window.innerWidth < 640) return;
+    stopTimer();
+}
+
+function offCarusel(){
+    if(window.innerWidth < 640) return;
+    startTimer();
 }
 
 carusel.addEventListener("mouseenter", onCarusel);
@@ -117,18 +127,27 @@ let firstPoint = 0;
 let endPoint = 0;
 
 function touchStart(event) {
+    if(window.innerWidth > 640) return;
     event.preventDefault();
-    firstPoint = event.clientX;
+    firstPoint = event.touches[0].pageX;
+    stopTimer();
 }
 
 function touchEnd(event) {
-    endPoint = event.clientX;
-    if ( firstPoint > endPoint ) {
-        back();
+    if(window.innerWidth > 640) return;
+    let result = Math.abs(endPoint - firstPoint);
+    endPoint = event.touches[0].pageX;
+    alert(endPoint)
+    if(result < 10) {
+        startTimer()
     } else {
-        forward();
+        if ( firstPoint > endPoint ) {
+            back();
+        } else {
+            forward();
+        }
     }
 }
-// carusel.addEventListener("mousedown", touchStart);
-// carusel.addEventListener("mouseup", touchEnd);
+carusel.addEventListener("touchstart", touchStart);
+carusel.addEventListener("touchend", touchEnd);
 
