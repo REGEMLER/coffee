@@ -62,7 +62,9 @@ window.addEventListener("resize", function(){
         cards.forEach((item) => {
             item.classList.remove("card__visible"); // удалить "подгруженные" карточки
         })
-        refresh.classList.remove("main__refresh_passive"); // вернуть кнопку подгрузки
+        if(product.length > 4) {
+            refresh.classList.remove("main__refresh_passive"); // вернуть кнопку подгрузки
+        }
     }
 })
 
@@ -135,7 +137,7 @@ function showModal(event){
     modal.classList.remove("modal_passive");
 }
 
-let checkedRadio = Number([...document.getElementsByName("size")].find(item => item.checked === true).value); //Нужно чтобы знать, предидущий размер
+let checkedRadio = Number([...document.getElementsByName("size")].find(item => item.checked === true).value); //Нужно чтобы знать, предыдущий размер
 
 function onModal(event) {
     const card = event.target.closest('.modal__card');
