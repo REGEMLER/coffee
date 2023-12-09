@@ -155,9 +155,9 @@ function touchEnd() {
         startTimer()
     } else {
         if ( firstPoint > endPoint ) {
-            back();
-        } else {
             forward();
+        } else {
+            back();
         }
     }
 }
