@@ -1,6 +1,6 @@
 import products from './products.js';
 let product = products.coffee;
-let isRefreshed = false; 
+// let isRefreshed = false; 
 
 const mainRadios = document.querySelector(".main__buttons");
 const cards = [...document.querySelectorAll(".main__card")];
@@ -22,7 +22,7 @@ function setCategory(index) {
 
 function changeCategory(event) {
     if(event.target.name === "radio") {
-        isRefreshed = false;
+        // isRefreshed = false;
         document.body.classList.add("blur");
         setTimeout(()=> {
             document.body.classList.remove("blur");   
@@ -53,12 +53,12 @@ function loadCards() {
         item.classList.add("card__visible");
     })
     refresh.classList.add("main__refresh_passive");
-    isRefreshed = true;
+    // isRefreshed = true;
 }
 refresh.addEventListener("click", loadCards);
 
 window.addEventListener("resize", function(){
-    if(this.window.innerWidth < 770 && !isRefreshed) {
+    if(this.window.innerWidth < 770 ) {
         cards.forEach((item) => {
             item.classList.remove("card__visible"); // удалить "подгруженные" карточки
         })
