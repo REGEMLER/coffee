@@ -14,5 +14,5 @@ The task consists of three parts:
 - Using JavaScript to implement the functionality specified in the task.
 
 [result](https://regemler.github.io/coffee/coffee-house/)  
-[Design in Figma]([https://www.figma.com/file/SGY7eOpXC1xBddFNsb72o7/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0-stage0?type=design&node-id=0-1&mode=design](https://www.figma.com/file/SAoBmuOqTfguehdT4IFRxQ/Coffee-House?type=design&node-id=0-1&mode=design&t=4zzAHPPrSYlJEv9B-0)https://www.figma.com/file/SAoBmuOqTfguehdT4IFRxQ/Coffee-House?type=design&node-id=0-1&mode=design&t=4zzAHPPrSYlJEv9B-0)  
-[Task]([https://github.com/rolling-scopes-school/tasks/blob/master/tasks/library/library.md](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house.md)https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house.md) 
+[Design in Figma](https://www.figma.com/file/SAoBmuOqTfguehdT4IFRxQ/Coffee-House?type=design&node-id=0-1&mode=design&t=4zzAHPPrSYlJEv9B-0)https://www.figma.com/file/SAoBmuOqTfguehdT4IFRxQ/Coffee-House?type=design&node-id=0-1&mode=design&t=4zzAHPPrSYlJEv9B-0)
+[Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house.md)https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house.md) 
